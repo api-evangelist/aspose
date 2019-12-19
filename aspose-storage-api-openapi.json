@@ -1,0 +1,94 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.1",
+        "title": "Aspose.Storage API",
+        "description": "The Aspose for Cloud File Storage API let's you upload and download files for use with our Product APIs",
+        "termsOfService": "http:\/\/www.aspose.com\/corporate\/legal\/terms-of-use.aspx"
+    },
+    "servers": [
+        "httpsapi.aspose.com\/v1.1"
+    ],
+    "paths": {
+        "\/storage\/disc": {
+            "get": {
+                "summary": "Get Storage Disc",
+                "description": "The resource represents information about users application disc usage (size in bytes",
+                "operationId": "GetStorageDisc",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/storage\/exist\/{path}": {
+            "get": {
+                "summary": "Get Storage Exist Path",
+                "description": "The controller checks that the file or folder exists in the service file storage.",
+                "operationId": "GetStorageExistPath",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/storage\/file\/{path}": {
+            "delete": {
+                "summary": "Delete Storage File Path",
+                "description": "The resource represents customers file at server file sto",
+                "operationId": "DeleteStorageFilePath",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get Storage File Path",
+                "description": "The resource represents customers file at server file storage.",
+                "operationId": "GetStorageFilePath",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Post Storage File Path",
+                "description": "The resource represents customers file at server file storage",
+                "operationId": "PostStorageFilePath",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Put Storage File Path",
+                "description": "The resource represents customers file at server file storage.",
+                "operationId": "PutStorageFilePath",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/storage\/folder\/{folder}": {
+            "delete": {
+                "summary": "Delete Storage Folder Folder",
+                "description": "The resource represents customer folder at service file storage. ",
+                "operationId": "DeleteStorageFolderFolder",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get Storage Folder Folder",
+                "description": "The resource represents customer folder at service file storage. ",
+                "operationId": "GetStorageFolderFolder",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Post Storage Folder Folder",
+                "description": "The resource represents customer folder at service file storage. ",
+                "operationId": "PostStorageFolderFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "dest",
+                        "in": "query",
+                        "description": "Moves (renames) the file to NewFile.txt"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
