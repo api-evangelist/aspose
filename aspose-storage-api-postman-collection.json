@@ -1,0 +1,228 @@
+{
+    "id": "955fcbc9b6ca7402b4815ed008dc5de8",
+    "name": "Aspose.Storage API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "b832fe9f1357c517ae2004938ff1bf7e",
+            "name": "Get Storage Disc",
+            "url": "httpsapi.aspose.com\/v1.1\/storage\/disc",
+            "description": "The resource represents information about users application disc usage (size in bytes",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "rawModeData": ""
+        },
+        {
+            "id": "9e777084b0ad3179587bcb9358388ff8",
+            "name": "Get Storage Exist Path",
+            "url": "httpsapi.aspose.com\/v1.1\/storage\/exist\/{path}",
+            "description": "The controller checks that the file or folder exists in the service file storage.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "rawModeData": ""
+        },
+        {
+            "id": "bdc8cdde48407a8a99bd0fb261a9a91b",
+            "name": "Delete Storage File Path",
+            "url": "httpsapi.aspose.com\/v1.1\/storage\/file\/{path}",
+            "description": "The resource represents customers file at server file sto",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "rawModeData": ""
+        },
+        {
+            "id": "65d2007aefee49105d1437fb07d9a74c",
+            "name": "Get Storage File Path",
+            "url": "httpsapi.aspose.com\/v1.1\/storage\/file\/{path}",
+            "description": "The resource represents customers file at server file storage.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "rawModeData": ""
+        },
+        {
+            "id": "ac9d44896aeef4f1b7ea06cf02739684",
+            "name": "Post Storage File Path",
+            "url": "httpsapi.aspose.com\/v1.1\/storage\/file\/{path}",
+            "description": "The resource represents customers file at server file storage",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "rawModeData": ""
+        },
+        {
+            "id": "e7eaae07cb867402b152a93c07d65102",
+            "name": "Put Storage File Path",
+            "url": "httpsapi.aspose.com\/v1.1\/storage\/file\/{path}",
+            "description": "The resource represents customers file at server file storage.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "rawModeData": ""
+        },
+        {
+            "id": "d01e8d2679fc3972f7b7641fb1aecdba",
+            "name": "Delete Storage Folder Folder",
+            "url": "httpsapi.aspose.com\/v1.1\/storage\/folder\/{folder}",
+            "description": "The resource represents customer folder at service file storage. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "rawModeData": ""
+        },
+        {
+            "id": "4409a372ec26461fc6145b361964cd02",
+            "name": "Get Storage Folder Folder",
+            "url": "httpsapi.aspose.com\/v1.1\/storage\/folder\/{folder}",
+            "description": "The resource represents customer folder at service file storage. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "rawModeData": ""
+        },
+        {
+            "id": "2c11c7a1c4dcdbd6f3a469f2d42648a2",
+            "name": "Post Storage Folder Folder",
+            "url": "httpsapi.aspose.com\/v1.1\/storage\/folder\/{folder}",
+            "description": "The resource represents customer folder at service file storage. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dest",
+                    "description": "Moves (renames) the file to NewFile.txt",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "rawModeData": ""
+        }
+    ]
+}
