@@ -1,5 +1,5 @@
 {
-    "id": "955fcbc9b6ca7402b4815ed008dc5de8",
+    "id": "c10ce165a93e14df0b48587b48a43574",
     "name": "Aspose.Storage API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "b832fe9f1357c517ae2004938ff1bf7e",
+            "id": "19d554fa751c28de4b094f56b91be684",
             "name": "Get Storage Disc",
             "url": "httpsapi.aspose.com\/v1.1\/storage\/disc",
             "description": "The resource represents information about users application disc usage (size in bytes",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "collectionId": "c10ce165a93e14df0b48587b48a43574",
             "rawModeData": ""
         },
         {
-            "id": "9e777084b0ad3179587bcb9358388ff8",
+            "id": "0cddd8be3c4b79e4a1c23731f3586844",
             "name": "Get Storage Exist Path",
             "url": "httpsapi.aspose.com\/v1.1\/storage\/exist\/{path}",
             "description": "The controller checks that the file or folder exists in the service file storage.",
@@ -52,11 +52,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "collectionId": "c10ce165a93e14df0b48587b48a43574",
             "rawModeData": ""
         },
         {
-            "id": "bdc8cdde48407a8a99bd0fb261a9a91b",
+            "id": "02682de07b8b21e14eaaa64c9df02742",
             "name": "Delete Storage File Path",
             "url": "httpsapi.aspose.com\/v1.1\/storage\/file\/{path}",
             "description": "The resource represents customers file at server file sto",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "collectionId": "c10ce165a93e14df0b48587b48a43574",
             "rawModeData": ""
         },
         {
-            "id": "65d2007aefee49105d1437fb07d9a74c",
+            "id": "abec0c9d50696b317401fede1a772823",
             "name": "Get Storage File Path",
             "url": "httpsapi.aspose.com\/v1.1\/storage\/file\/{path}",
             "description": "The resource represents customers file at server file storage.",
@@ -98,11 +98,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "collectionId": "c10ce165a93e14df0b48587b48a43574",
             "rawModeData": ""
         },
         {
-            "id": "ac9d44896aeef4f1b7ea06cf02739684",
+            "id": "b9c3d9c66fe4dfc30822a40bcf7f39ea",
             "name": "Post Storage File Path",
             "url": "httpsapi.aspose.com\/v1.1\/storage\/file\/{path}",
             "description": "The resource represents customers file at server file storage",
@@ -121,11 +121,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "collectionId": "c10ce165a93e14df0b48587b48a43574",
             "rawModeData": ""
         },
         {
-            "id": "e7eaae07cb867402b152a93c07d65102",
+            "id": "21a3f98062c69b466171229d13840546",
             "name": "Put Storage File Path",
             "url": "httpsapi.aspose.com\/v1.1\/storage\/file\/{path}",
             "description": "The resource represents customers file at server file storage.",
@@ -144,11 +144,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "collectionId": "c10ce165a93e14df0b48587b48a43574",
             "rawModeData": ""
         },
         {
-            "id": "d01e8d2679fc3972f7b7641fb1aecdba",
+            "id": "c3ad6e103bf4c9296129d339bde9b6a5",
             "name": "Delete Storage Folder Folder",
             "url": "httpsapi.aspose.com\/v1.1\/storage\/folder\/{folder}",
             "description": "The resource represents customer folder at service file storage. ",
@@ -167,11 +167,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "collectionId": "c10ce165a93e14df0b48587b48a43574",
             "rawModeData": ""
         },
         {
-            "id": "4409a372ec26461fc6145b361964cd02",
+            "id": "9c1ddfef06f928be5ca773239e6d188a",
             "name": "Get Storage Folder Folder",
             "url": "httpsapi.aspose.com\/v1.1\/storage\/folder\/{folder}",
             "description": "The resource represents customer folder at service file storage. ",
@@ -190,11 +190,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "collectionId": "c10ce165a93e14df0b48587b48a43574",
             "rawModeData": ""
         },
         {
-            "id": "2c11c7a1c4dcdbd6f3a469f2d42648a2",
+            "id": "0bdca9fac1ccd5255be634537a6e0be1",
             "name": "Post Storage Folder Folder",
             "url": "httpsapi.aspose.com\/v1.1\/storage\/folder\/{folder}",
             "description": "The resource represents customer folder at service file storage. ",
@@ -221,7 +221,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "955fcbc9b6ca7402b4815ed008dc5de8",
+            "collectionId": "c10ce165a93e14df0b48587b48a43574",
             "rawModeData": ""
         }
     ]
