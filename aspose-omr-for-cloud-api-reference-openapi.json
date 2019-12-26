@@ -1,0 +1,219 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.1",
+        "title": "Aspose.OMR for Cloud API Reference",
+        "description": "Aspose.OMR for Cloud helps performing optical mark recognition in the cloud",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.aspose.cloud\/v1.1"
+    ],
+    "paths": {
+        "\/omr\/{name}\/runOmrTask": {
+            "post": {
+                "summary": "Run specific OMR task",
+                "description": "",
+                "operationId": "PostRunOmrTask",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Name of the file to recognize."
+                    },
+                    {
+                        "name": "actionName",
+                        "in": "query",
+                        "description": "Action name [CorrectTemplate, FinalizeTemplate, RecognizeImage]"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Images storage."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Images folder."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OMRResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "OMRFunctionParam": {
+                "type": "object",
+                "properties": {
+                    "FunctionParam": {
+                        "description": "FunctionParam  depends on operation",
+                        "type": "string"
+                    },
+                    "AdditionalParam": {
+                        "description": "AdditionalParam depends on operation ",
+                        "type": "string"
+                    }
+                }
+            },
+            "Payload": {
+                "type": "object",
+                "properties": {
+                    "Result": {
+                        "description": "OMR result",
+                        "type": ""
+                    }
+                }
+            },
+            "Result": {
+                "type": "object"
+            },
+            "OmrResponseContent": {
+                "type": "object",
+                "properties": {
+                    "TemplateId": {
+                        "description": "GUID string that is used to identify template on server\nThis value is assigned after Template Correction and used later in Template Finalization and Image Recognition",
+                        "type": "string"
+                    },
+                    "ExecutionTime": {
+                        "description": "Indicates how long it took to perform task on server.",
+                        "type": "number"
+                    },
+                    "ResponseFiles": {
+                        "description": "This structure holds array of files returned in response\nType and content of files differes depending on action",
+                        "type": "array"
+                    },
+                    "Info": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ResponseFiles": {
+                "type": "array"
+            },
+            "Info": {
+                "type": "object"
+            },
+            "FileInfo": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "Name of the file",
+                        "type": "string"
+                    },
+                    "Size": {
+                        "description": "Size of the image in bytes",
+                        "type": "integer"
+                    },
+                    "Data": {
+                        "description": "File data packed in base64 string",
+                        "type": "string"
+                    }
+                }
+            },
+            "OmrResponseInfo": {
+                "type": "object",
+                "properties": {
+                    "ResponseVersion": {
+                        "description": "String value representing version of the response.",
+                        "type": "string"
+                    },
+                    "ProcessedTasksCount": {
+                        "description": "Total amount of processed tasks",
+                        "type": "integer"
+                    },
+                    "SuccessfulTasksCount": {
+                        "description": "Total amount of successful tasks, i.e. tasks that completed without errors",
+                        "type": "integer"
+                    },
+                    "Details": {
+                        "description": "Additional information regarding performed task.",
+                        "type": ""
+                    }
+                }
+            },
+            "Details": {
+                "type": "object"
+            },
+            "OMRResponseDetails": {
+                "type": "object",
+                "properties": {
+                    "TaskMessages": {
+                        "description": "Warnings and other messages regarding task, etc.",
+                        "type": "array"
+                    },
+                    "TaskResult": {
+                        "description": "Indicates if each particular task passed or failed,",
+                        "type": "string"
+                    },
+                    "RecognitionStatistics": {
+                        "description": "RecognitionStatistics",
+                        "type": "array"
+                    }
+                }
+            },
+            "TaskMessages": {
+                "type": "array"
+            },
+            "RecognitionStatistics": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "Name of the file",
+                        "type": "string"
+                    },
+                    "TaskMessages": {
+                        "description": "Warnings and other messages regarding task, etc.",
+                        "type": "array"
+                    },
+                    "TaskResult": {
+                        "description": "Indicates if each particular task passed or failed,",
+                        "type": "string"
+                    },
+                    "RunSeconds": {
+                        "description": "Gets or sets RunSeconds",
+                        "type": "number"
+                    }
+                }
+            },
+            "ServerStat": {
+                "type": "object",
+                "properties": {
+                    "StorageDownloadTime": {
+                        "description": "Get or set StorageDownloadTime",
+                        "type": "string"
+                    },
+                    "OmrFunctionCallTime": {
+                        "description": "Get or set OmrFunctionCallTime",
+                        "type": "string"
+                    }
+                }
+            },
+            "AsposeResponse": {
+                "type": "object",
+                "properties": {
+                    "Status": {
+                        "description": "Indicates operation's status",
+                        "type": "string"
+                    }
+                }
+            },
+            "OMRResponse": {
+                "type": "object"
+            }
+        }
+    }
+}
