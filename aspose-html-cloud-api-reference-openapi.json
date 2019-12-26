@@ -1,0 +1,2128 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "19.11.0",
+        "title": "Aspose.HTML Cloud API Reference",
+        "description": "",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.aspose.cloud\/v3.0"
+    ],
+    "paths": {
+        "\/html\/{name}\/convert\/image\/{outFormat}": {
+            "get": {
+                "summary": "Converts the HTML document (located on storage) to the specified image format and returns resulting file in response content.",
+                "description": "",
+                "operationId": "GetConvertDocumentToImage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "outFormat",
+                        "in": "path",
+                        "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff"
+                    },
+                    {
+                        "name": "width",
+                        "in": "query",
+                        "description": "Resulting image width in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "Resulting image height in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "leftMargin",
+                        "in": "query",
+                        "description": "Left resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "rightMargin",
+                        "in": "query",
+                        "description": "Right resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "topMargin",
+                        "in": "query",
+                        "description": "Top resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "bottomMargin",
+                        "in": "query",
+                        "description": "Bottom resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "resolution",
+                        "in": "query",
+                        "description": "Resolution of resulting image. Default is 96 dpi."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Converts the HTML document (located on storage) to the specified image format and uploads resulting file to storage.",
+                "description": "",
+                "operationId": "PutConvertDocumentToImage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)"
+                    },
+                    {
+                        "name": "outFormat",
+                        "in": "path",
+                        "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff"
+                    },
+                    {
+                        "name": "width",
+                        "in": "query",
+                        "description": "Resulting image width in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "Resulting image height in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "leftMargin",
+                        "in": "query",
+                        "description": "Left resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "rightMargin",
+                        "in": "query",
+                        "description": "Right resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "topMargin",
+                        "in": "query",
+                        "description": "Top resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "bottomMargin",
+                        "in": "query",
+                        "description": "Bottom resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "resolution",
+                        "in": "query",
+                        "description": "Resolution of resulting image. Default is 96 dpi."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/{name}\/convert\/pdf": {
+            "get": {
+                "summary": "Converts the HTML document (located on storage) to PDF and returns resulting file in response content.",
+                "description": "",
+                "operationId": "GetConvertDocumentToPdf",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "width",
+                        "in": "query",
+                        "description": "Resulting image width in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "Resulting image height in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "leftMargin",
+                        "in": "query",
+                        "description": "Left resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "rightMargin",
+                        "in": "query",
+                        "description": "Right resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "topMargin",
+                        "in": "query",
+                        "description": "Top resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "bottomMargin",
+                        "in": "query",
+                        "description": "Bottom resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Converts the HTML document (located on storage) to PDF and uploads resulting file to storage.",
+                "description": "",
+                "operationId": "PutConvertDocumentToPdf",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)"
+                    },
+                    {
+                        "name": "width",
+                        "in": "query",
+                        "description": "Resulting image width in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "Resulting image height in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "leftMargin",
+                        "in": "query",
+                        "description": "Left resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "rightMargin",
+                        "in": "query",
+                        "description": "Right resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "topMargin",
+                        "in": "query",
+                        "description": "Top resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "bottomMargin",
+                        "in": "query",
+                        "description": "Bottom resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/{name}\/convert\/xps": {
+            "get": {
+                "summary": "Converts the HTML document (located on storage) to XPS and returns resulting file in response content.",
+                "description": "",
+                "operationId": "GetConvertDocumentToXps",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "width",
+                        "in": "query",
+                        "description": "Resulting image width in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "Resulting image height in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "leftMargin",
+                        "in": "query",
+                        "description": "Left resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "rightMargin",
+                        "in": "query",
+                        "description": "Right resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "topMargin",
+                        "in": "query",
+                        "description": "Top resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "bottomMargin",
+                        "in": "query",
+                        "description": "Bottom resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Converts the HTML document (located on storage) to XPS and uploads resulting file to storage.",
+                "description": "",
+                "operationId": "PutConvertDocumentToXps",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)"
+                    },
+                    {
+                        "name": "width",
+                        "in": "query",
+                        "description": "Resulting image width in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "Resulting image height in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "leftMargin",
+                        "in": "query",
+                        "description": "Left resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "rightMargin",
+                        "in": "query",
+                        "description": "Right resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "topMargin",
+                        "in": "query",
+                        "description": "Top resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "bottomMargin",
+                        "in": "query",
+                        "description": "Bottom resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/convert\/image\/{outFormat}": {
+            "get": {
+                "summary": "Converts the HTML page (located in the Web) to the specified image format and returns resulting file in response content.",
+                "description": "",
+                "operationId": "GetConvertDocumentToImageByUrl",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sourceUrl",
+                        "in": "query",
+                        "description": "Source page URL."
+                    },
+                    {
+                        "name": "outFormat",
+                        "in": "path",
+                        "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff"
+                    },
+                    {
+                        "name": "width",
+                        "in": "query",
+                        "description": "Resulting image width in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "Resulting image height in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "leftMargin",
+                        "in": "query",
+                        "description": "Left resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "rightMargin",
+                        "in": "query",
+                        "description": "Right resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "topMargin",
+                        "in": "query",
+                        "description": "Top resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "bottomMargin",
+                        "in": "query",
+                        "description": "Bottom resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "resolution",
+                        "in": "query",
+                        "description": "Resolution of resulting image. Default is 96 dpi."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Converts the HTML document (in request content) to the specified image format and uploads resulting file to storage.",
+                "description": "",
+                "operationId": "PostConvertDocumentInRequestToImage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)"
+                    },
+                    {
+                        "name": "outFormat",
+                        "in": "path",
+                        "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff"
+                    },
+                    {
+                        "name": "width",
+                        "in": "query",
+                        "description": "Resulting image width in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "Resulting image height in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "leftMargin",
+                        "in": "query",
+                        "description": "Left resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "rightMargin",
+                        "in": "query",
+                        "description": "Right resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "topMargin",
+                        "in": "query",
+                        "description": "Top resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "bottomMargin",
+                        "in": "query",
+                        "description": "Bottom resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "resolution",
+                        "in": "query",
+                        "description": "Resolution of resulting image. Default is 96 dpi."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": "A file to be converted."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/convert\/pdf": {
+            "get": {
+                "summary": "Convert the HTML page (located in the Web) to PDF and returns resulting file in response content.",
+                "description": "",
+                "operationId": "GetConvertDocumentToPdfByUrl",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sourceUrl",
+                        "in": "query",
+                        "description": "Source page URL."
+                    },
+                    {
+                        "name": "width",
+                        "in": "query",
+                        "description": "Resulting image width in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "Resulting image height in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "leftMargin",
+                        "in": "query",
+                        "description": "Left resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "rightMargin",
+                        "in": "query",
+                        "description": "Right resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "topMargin",
+                        "in": "query",
+                        "description": "Top resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "bottomMargin",
+                        "in": "query",
+                        "description": "Bottom resulting image margin in points (1\/96 inch)."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Converts the HTML document (in request content) to PDF and uploads resulting file to stora, ge.",
+                "description": "",
+                "operationId": "PostConvertDocumentInRequestToPdf",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)"
+                    },
+                    {
+                        "name": "width",
+                        "in": "query",
+                        "description": "Resulting image width in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "Resulting image height in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "leftMargin",
+                        "in": "query",
+                        "description": "Left resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "rightMargin",
+                        "in": "query",
+                        "description": "Right resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "topMargin",
+                        "in": "query",
+                        "description": "Top resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "bottomMargin",
+                        "in": "query",
+                        "description": "Bottom resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": "A file to be converted."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/convert\/xps": {
+            "get": {
+                "summary": "Converts the HTML page (located in the Web) to XPS and returns resulting file in response content.",
+                "description": "",
+                "operationId": "GetConvertDocumentToXpsByUrl",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sourceUrl",
+                        "in": "query",
+                        "description": "Source page URL."
+                    },
+                    {
+                        "name": "width",
+                        "in": "query",
+                        "description": "Resulting image width in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "Resulting image height in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "leftMargin",
+                        "in": "query",
+                        "description": "Left resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "rightMargin",
+                        "in": "query",
+                        "description": "Right resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "topMargin",
+                        "in": "query",
+                        "description": "Top resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "bottomMargin",
+                        "in": "query",
+                        "description": "Bottom resulting image margin in points (1\/96 inch)."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Converts the HTML document (in request content) to XPS and uploads resulting file to storage.",
+                "description": "",
+                "operationId": "PostConvertDocumentInRequestToXps",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)"
+                    },
+                    {
+                        "name": "width",
+                        "in": "query",
+                        "description": "Resulting image width in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "Resulting image height in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "leftMargin",
+                        "in": "query",
+                        "description": "Left resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "rightMargin",
+                        "in": "query",
+                        "description": "Right resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "topMargin",
+                        "in": "query",
+                        "description": "Top resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "bottomMargin",
+                        "in": "query",
+                        "description": "Bottom resulting image margin in points (1\/96 inch)."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": "A file to be converted."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/{name}\/convert\/md": {
+            "get": {
+                "summary": "Converts the HTML document (located on storage) to Markdown and returns resulting file in response content.",
+                "description": "",
+                "operationId": "GetConvertDocumentToMarkdown",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "useGit",
+                        "in": "query",
+                        "description": "Use Git Markdown flavor to save."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Converts the HTML document (located on storage) to Markdown and uploads resulting file to storage by specified path.",
+                "description": "",
+                "operationId": "PutConvertDocumentToMarkdown",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)"
+                    },
+                    {
+                        "name": "useGit",
+                        "in": "query",
+                        "description": "Use Git Markdown flavor to save."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/convert\/md": {
+            "post": {
+                "summary": "Converts the HTML document (in request content) to Markdown and uploads resulting file to storage by specified path.",
+                "description": "",
+                "operationId": "PostConvertDocumentInRequestToMarkdown",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)"
+                    },
+                    {
+                        "name": "useGit",
+                        "in": "query",
+                        "description": "Use Git Markdown flavor to save."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": "A file to be converted."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/convert\/mhtml": {
+            "get": {
+                "summary": "Converts the HTML page from Web by its URL to MHTML returns resulting file in response content.",
+                "description": "",
+                "operationId": "GetConvertDocumentToMHTMLByUrl",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sourceUrl",
+                        "in": "query",
+                        "description": "Source page URL."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/download": {
+            "get": {
+                "summary": "Return HTML page from Web with linked resources packaged as a ZIP archive by the source page URL.",
+                "description": "",
+                "operationId": "GetDocumentByUrl",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sourceUrl",
+                        "in": "query",
+                        "description": "Source page URL."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/{name}\/images\/all": {
+            "get": {
+                "summary": "Return all HTML document images packaged as a ZIP archive.",
+                "description": "",
+                "operationId": "GetDocumentImages",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/images\/all": {
+            "get": {
+                "summary": "Return all HTML page images packaged as a ZIP archive by the source page URL.",
+                "description": "",
+                "operationId": "GetDocumentImagesByUrl",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sourceUrl",
+                        "in": "query",
+                        "description": "Source page URL."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/{name}\/fragments\/{outFormat}": {
+            "get": {
+                "summary": "Return list of HTML fragments matching the specified XPath query. ",
+                "description": "",
+                "operationId": "GetDocumentFragmentByXPath",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "xPath",
+                        "in": "query",
+                        "description": "XPath query string."
+                    },
+                    {
+                        "name": "outFormat",
+                        "in": "path",
+                        "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/fragments\/{outFormat}": {
+            "get": {
+                "summary": "Return list of HTML fragments matching the specified XPath query by the source page URL.",
+                "description": "",
+                "operationId": "GetDocumentFragmentByXPathByUrl",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sourceUrl",
+                        "in": "query",
+                        "description": "Source page URL."
+                    },
+                    {
+                        "name": "xPath",
+                        "in": "query",
+                        "description": "XPath query string."
+                    },
+                    {
+                        "name": "outFormat",
+                        "in": "path",
+                        "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/{name}\/fragments\/css\/{outFormat}": {
+            "get": {
+                "summary": "Return list of HTML fragments matching the specified CSS selector.",
+                "description": "",
+                "operationId": "GetDocumentFragmentsByCSSSelector",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "selector",
+                        "in": "query",
+                        "description": "CSS selector string."
+                    },
+                    {
+                        "name": "outFormat",
+                        "in": "path",
+                        "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/fragments\/css\/{outFormat}": {
+            "get": {
+                "summary": "Return list of HTML fragments matching the specified CSS selector by the source page URL.",
+                "description": "",
+                "operationId": "GetDocumentFragmentsByCSSSelectorByUrl",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sourceUrl",
+                        "in": "query",
+                        "description": "Source page URL."
+                    },
+                    {
+                        "name": "selector",
+                        "in": "query",
+                        "description": "CSS selector string."
+                    },
+                    {
+                        "name": "outFormat",
+                        "in": "path",
+                        "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/{name}\/import\/md": {
+            "get": {
+                "summary": "Creates an HTML document from Markdown file (located on storage) and returns resulting file in response content.",
+                "description": "",
+                "operationId": "GetImportMarkdownToHtml",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Creates an HTML document from Markdown file (located on storage) and uploads resulting file to the storage.",
+                "description": "",
+                "operationId": "PutImportMarkdownToHtml",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/import\/md": {
+            "post": {
+                "summary": "Creates an HTML document from Markdown file (in request content) and uploads resulting file to the storage.",
+                "description": "",
+                "operationId": "PostImportMarkdownToHtml",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/seo": {
+            "get": {
+                "summary": "Return SEO warnings in json format.",
+                "description": "",
+                "operationId": "Get",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "addr",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/{templateName}\/merge": {
+            "get": {
+                "summary": "Populate HTML document template with data located as a file in the storage.",
+                "description": "",
+                "operationId": "GetMergeHtmlTemplate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "templateName",
+                        "in": "path",
+                        "description": "Template document name. Template document is HTML or zipped HTML."
+                    },
+                    {
+                        "name": "dataPath",
+                        "in": "query",
+                        "description": "Data source file path in the storage. Supported data formats: XML, JSON. File name extension must match the format."
+                    },
+                    {
+                        "name": "options",
+                        "in": "query",
+                        "description": "Template merge options: JSON list of name-value pairs"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Populate HTML document template with data from the request body. Result document will be saved to storage.",
+                "description": "",
+                "operationId": "PostMergeHtmlTemplate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "templateName",
+                        "in": "path",
+                        "description": "Template document name. Template document is HTML or zipped HTML."
+                    },
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)"
+                    },
+                    {
+                        "name": "options",
+                        "in": "query",
+                        "description": "Template merge options: JSON list of name-value pairs"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Source document folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Source document storage."
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": "A file to be converted."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/storage\/file\/{path}": {
+            "get": {
+                "summary": "Download file",
+                "description": "",
+                "operationId": "DownloadFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Upload file",
+                "description": "",
+                "operationId": "UploadFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": "A file to be converted."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete file",
+                "description": "",
+                "operationId": "DeleteFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/storage\/file\/copy\/{srcPath}": {
+            "put": {
+                "summary": "Copy file",
+                "description": "",
+                "operationId": "CopyFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/storage\/file\/move\/{srcPath}": {
+            "put": {
+                "summary": "Move file",
+                "description": "",
+                "operationId": "MoveFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/storage\/folder\/{path}": {
+            "get": {
+                "summary": "Get all files and folders within a folder",
+                "description": "",
+                "operationId": "GetFilesList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Create the folder",
+                "description": "",
+                "operationId": "CreateFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete folder",
+                "description": "",
+                "operationId": "DeleteFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "recursive",
+                        "in": "query",
+                        "description": "Enable to delete folders, subfolders and files"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/storage\/folder\/copy\/{srcPath}": {
+            "put": {
+                "summary": "Copy folder",
+                "description": "",
+                "operationId": "CopyFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/storage\/folder\/move\/{srcPath}": {
+            "put": {
+                "summary": "Move folder",
+                "description": "",
+                "operationId": "MoveFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/storage\/{storageName}\/exist": {
+            "get": {
+                "summary": "Check if storage exists",
+                "description": "",
+                "operationId": "StorageExists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "storageName",
+                        "in": "path",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/storage\/exist\/{path}": {
+            "get": {
+                "summary": "Check if file or folder exists",
+                "description": "",
+                "operationId": "ObjectExists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/storage\/disc": {
+            "get": {
+                "summary": "Get disc usage",
+                "description": "",
+                "operationId": "GetDiscUsage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/html\/storage\/version\/{path}": {
+            "get": {
+                "summary": "Get file versions",
+                "description": "",
+                "operationId": "GetFileVersions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result. Content is an image file - check the HTTP response Content-Type header value.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "FilesUploadResult": {
+                "type": "object",
+                "properties": {
+                    "Uploaded": {
+                        "description": "List of uploaded file names",
+                        "type": "array"
+                    },
+                    "Errors": {
+                        "description": "List of errors.",
+                        "type": "array"
+                    }
+                }
+            },
+            "Uploaded": {
+                "type": "array"
+            },
+            "Errors": {
+                "type": "array"
+            },
+            "Error": {
+                "type": "object",
+                "properties": {
+                    "Code": {
+                        "description": "Code\n            ",
+                        "type": "string"
+                    },
+                    "Message": {
+                        "description": "Message\n            ",
+                        "type": "string"
+                    },
+                    "Description": {
+                        "description": "Description\n            ",
+                        "type": "string"
+                    },
+                    "InnerError": {
+                        "description": "Inner Error\n            ",
+                        "type": ""
+                    }
+                }
+            },
+            "InnerError": {
+                "type": "object"
+            },
+            "ErrorDetails": {
+                "type": "object",
+                "properties": {
+                    "RequestId": {
+                        "description": "The request id",
+                        "type": "string"
+                    },
+                    "Date": {
+                        "description": "Date",
+                        "type": "string"
+                    }
+                }
+            },
+            "FilesList": {
+                "type": "object",
+                "properties": {
+                    "Value": {
+                        "description": "Files and folders contained by folder StorageFile.",
+                        "type": "array"
+                    }
+                }
+            },
+            "Value": {
+                "type": "array"
+            },
+            "StorageFile": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "File or folder name.",
+                        "type": "string"
+                    },
+                    "IsFolder": {
+                        "description": "True if it is a folder.",
+                        "type": "boolean"
+                    },
+                    "ModifiedDate": {
+                        "description": "File or folder last modified DateTime.",
+                        "type": "string"
+                    },
+                    "Size": {
+                        "description": "File or folder size.",
+                        "type": "integer"
+                    },
+                    "Path": {
+                        "description": "File or folder path.",
+                        "type": "string"
+                    }
+                }
+            },
+            "StorageExist": {
+                "type": "object",
+                "properties": {
+                    "Exists": {
+                        "description": "Shows that the storage exists.\n            ",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "ObjectExist": {
+                "type": "object",
+                "properties": {
+                    "Exists": {
+                        "description": "Shows that the storage exists.\n            ",
+                        "type": "boolean"
+                    },
+                    "IsFolder": {
+                        "description": "True if it is a folder.",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "DiscUsage": {
+                "type": "object",
+                "properties": {
+                    "UsedSize": {
+                        "description": "Application used disc space.",
+                        "type": "integer"
+                    },
+                    "TotalSize": {
+                        "description": "Total disc space.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "FileVersions": {
+                "type": "object",
+                "properties": {
+                    "Value": {
+                        "description": "Files and folders contained by folder StorageFile.",
+                        "type": "array"
+                    }
+                }
+            },
+            "FileVersion": {
+                "type": "object"
+            }
+        }
+    }
+}
