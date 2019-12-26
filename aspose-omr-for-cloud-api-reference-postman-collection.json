@@ -1,0 +1,65 @@
+{
+    "id": "1bb47c0d0b3fc18573211e9aed90b066",
+    "name": "Aspose.OMR for Cloud API Reference",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "052c95ee1dec7b871cf62a490aff6080",
+            "name": "Run specific OMR task",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/omr\/{name}\/runOmrTask",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Name of the file to recognize.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "actionName",
+                    "description": "Action name [CorrectTemplate, FinalizeTemplate, RecognizeImage]",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Images storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Images folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1bb47c0d0b3fc18573211e9aed90b066",
+            "rawModeData": ""
+        }
+    ]
+}
