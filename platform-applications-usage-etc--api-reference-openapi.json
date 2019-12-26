@@ -1,0 +1,612 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.1",
+        "title": "Platform (applications, usage etc.) API Reference",
+        "description": "",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.aspose.cloud\/v1.1"
+    ],
+    "paths": {
+        "\/app": {
+            "get": {
+                "summary": "Get the list of applications ",
+                "description": "",
+                "operationId": "Get",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create new application ",
+                "description": "",
+                "operationId": "Post",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": "The application was created successfully."
+                    }
+                }
+            }
+        },
+        "\/app\/{name}": {
+            "get": {
+                "summary": "Get application by name ",
+                "description": "",
+                "operationId": "GetByName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Application name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update application by name ",
+                "description": "",
+                "operationId": "Put",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Application name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete application by name ",
+                "description": "",
+                "operationId": "Delete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Application name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/app\/{name}\/usage": {
+            "get": {
+                "summary": "Get application usage by period ",
+                "description": "",
+                "operationId": "GetUsage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Application name"
+                    },
+                    {
+                        "name": "start",
+                        "in": "query",
+                        "description": "Period start date (period includes the start date)"
+                    },
+                    {
+                        "name": "end",
+                        "in": "query",
+                        "description": "Period end date (period does not includes the end date)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/statistics": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetStatistics",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/statistics\/hours": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetStatisticsByHours",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "startDate",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "endDate",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/statistics\/hours\/last30Days": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetStatisticsByHoursForLast30Days",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/statistics\/likeGD": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetStatisticsLikeGD",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/statistics\/plans": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetStatisticsPlans",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/statistics\/errors": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetStatisticsErrors",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/statistics\/paid": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetStatisticsPaid",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/statistics\/free": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetStatisticsFree",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/statistics\/calls": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetStatisticsAPI",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/statistics\/overdrafts": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetStatisticsOverdraft",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/statistics\/currentUsers": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetStatisticsCurrentUsers",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/usage": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetUserUsage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "start",
+                        "in": "query",
+                        "description": "Period start date (period includes the start date)"
+                    },
+                    {
+                        "name": "end",
+                        "in": "query",
+                        "description": "Period end date (period does not includes the end date)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/usage\/currentPeriod": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetUserUsageCurrentMonth",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/usage\/previousPeriod": {
+            "get": {
+                "summary": "Get usage logs for previous subscription period.",
+                "description": "",
+                "operationId": "GetUserUsagePreviousMonth",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/usage\/summary": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetUserUsageCurrentPeriodSummary",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Returns the result.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/App"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "App": {
+                "type": "object",
+                "properties": {
+                    "AppKey": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "AppSid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "IsDefault": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "Created": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "AppUsage": {
+                "type": "object",
+                "properties": {
+                    "Documents": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "Barcodes": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "Ocrs": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "Calls": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "FileSize": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "SaaSposeResponse": {
+                "type": "object",
+                "properties": {
+                    "Code": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "Status": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "UserUsageSummaryStatistics": {
+                "type": "object",
+                "properties": {
+                    "DocumentsUsed": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "DocumentsLimit": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "BarcodesUsed": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "BarcodesLimit": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "OcrsUsed": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "OcrsLimit": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "CallsUsed": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "CallsLimit": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "ApplicationUsageResponse": {
+                "type": "object"
+            },
+            "UserUsageSummaryResponse": {
+                "type": "object"
+            }
+        }
+    }
+}
