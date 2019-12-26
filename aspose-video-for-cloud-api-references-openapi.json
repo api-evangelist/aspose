@@ -1,0 +1,848 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.1",
+        "title": "Aspose.Video for Cloud API References",
+        "description": "",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.aspose.cloud\/v1.1"
+    ],
+    "paths": {
+        "\/video\/{name}\/videoProperties": {
+            "get": {
+                "summary": "Read video properties info.",
+                "description": "",
+                "operationId": "GetVideoProperties",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The videos name."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Original video folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which have to be used."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as propertes info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/VideoPropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/video\/{name}\/videoProperties\/{propertyName}": {
+            "get": {
+                "summary": "Read video property info by the property name.",
+                "description": "",
+                "operationId": "GetVideoProperty",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The videos name."
+                    },
+                    {
+                        "name": "propertyName",
+                        "in": "path",
+                        "description": "The property name."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Original video folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which have to be used."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as propertes info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/VideoPropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/video\/{name}\/addAudio": {
+            "post": {
+                "summary": "Add audio to original video.",
+                "description": "",
+                "operationId": "PostAddAudio",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The videos name."
+                    },
+                    {
+                        "name": "destinationPath",
+                        "in": "query",
+                        "description": "Path where to save the result file."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Original video folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which have to be used."
+                    },
+                    {
+                        "name": "destFileName",
+                        "in": "query",
+                        "description": "Result name of the document after the operation. If this parameter is omitted then result of the operation will be saved as the source document."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as propertes info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/VideoPropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/video\/{name}\/appendVideo": {
+            "post": {
+                "summary": "Append video to original video.",
+                "description": "",
+                "operationId": "PostAppendVideo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The videos name."
+                    },
+                    {
+                        "name": "destinationPath",
+                        "in": "query",
+                        "description": "Path where to save the result file."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Original video folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which have to be used."
+                    },
+                    {
+                        "name": "destFileName",
+                        "in": "query",
+                        "description": "Result name of the document after the operation. If this parameter is omitted then result of the operation will be saved as the source document."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as propertes info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/VideoPropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/video\/{name}": {
+            "get": {
+                "summary": "Export the document into the specified format.",
+                "description": "",
+                "operationId": "GetVideoWithFormat",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The videos name."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "The destination format."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Original video folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which have to be used."
+                    },
+                    {
+                        "name": "resultPath",
+                        "in": "query",
+                        "description": "Path to save result"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as propertes info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/VideoPropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/video\/{name}\/convert": {
+            "post": {
+                "summary": "Convert document from request content to format specified.",
+                "description": "",
+                "operationId": "PostConvertVideo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The videos name."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "The destination format."
+                    },
+                    {
+                        "name": "resultPath",
+                        "in": "query",
+                        "description": "Path to save result"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Original video folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which have to be used."
+                    },
+                    {
+                        "name": "destFileName",
+                        "in": "query",
+                        "description": "Result name of the document after the operation. If this parameter is omitted then result of the operation will be saved as the source document."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as propertes info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/VideoPropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/video\/{name}\/extractThumbnail": {
+            "post": {
+                "summary": "Create a thumbnail image.",
+                "description": "",
+                "operationId": "PostExtractThumbnail",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The videos name."
+                    },
+                    {
+                        "name": "destinationPath",
+                        "in": "query",
+                        "description": "Path where to save the result file."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Determines from which time position the frame for the thumbnail should be taken."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Original video folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which have to be used."
+                    },
+                    {
+                        "name": "destFileName",
+                        "in": "query",
+                        "description": "Result name of the document after the operation. If this parameter is omitted then result of the operation will be saved as the source document."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as propertes info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/VideoPropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/video\/{name}\/extract": {
+            "post": {
+                "summary": "Extract video.",
+                "description": "",
+                "operationId": "PostExtractVideo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The videos name."
+                    },
+                    {
+                        "name": "destinationPath",
+                        "in": "query",
+                        "description": "Path where to save the result file."
+                    },
+                    {
+                        "name": "start",
+                        "in": "query",
+                        "description": "Time position from which start extraction."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Determines from which time position the frame for the thumbnail should be taken."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Original video folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which have to be used."
+                    },
+                    {
+                        "name": "destFileName",
+                        "in": "query",
+                        "description": "Result name of the document after the operation. If this parameter is omitted then result of the operation will be saved as the source document."
+                    },
+                    {
+                        "name": "fontsLocation",
+                        "in": "query",
+                        "description": "Folder in filestorage with custom fonts."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as propertes info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/VideoPropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/video\/{fileName}": {
+            "get": {
+                "summary": "Read video common info.",
+                "description": "",
+                "operationId": "GetVideo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fileName",
+                        "in": "path",
+                        "description": "The file name."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Original video folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which have to be used."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as propertes info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/VideoPropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/video\/loadWebVideo": {
+            "post": {
+                "summary": "Loads new video from web into the file with any supported format of data.",
+                "description": "",
+                "operationId": "PostLoadWebVideo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which have to be used."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as propertes info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/VideoPropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "VideoOptions": {
+                "type": "object",
+                "properties": {
+                    "Format": {
+                        "description": "Represents original video format",
+                        "type": "string"
+                    },
+                    "ColorModel": {
+                        "description": "Represents original color model",
+                        "type": "string"
+                    },
+                    "FrameSize": {
+                        "description": "Represetns original resolution",
+                        "type": "string"
+                    },
+                    "Bitrate": {
+                        "description": "Represetns original video bitrate",
+                        "type": "integer"
+                    },
+                    "FPS": {
+                        "description": "Represetns original FPS",
+                        "type": "integer"
+                    }
+                }
+            },
+            "AudioOptions": {
+                "type": "object",
+                "properties": {
+                    "Format": {
+                        "description": "Represents original video format",
+                        "type": "string"
+                    },
+                    "SampleRate": {
+                        "description": "Represents original audio sample rate",
+                        "type": "string"
+                    },
+                    "ChannelOutput": {
+                        "description": "Represents original channel output",
+                        "type": "string"
+                    },
+                    "Bitrate": {
+                        "description": "Represetns original video bitrate",
+                        "type": "integer"
+                    },
+                    "TrackId": {
+                        "description": "Represents audio track id number if the original file contains more than one audio track",
+                        "type": "integer"
+                    }
+                }
+            },
+            "LinkElement": {
+                "type": "object",
+                "properties": {
+                    "link": {
+                        "description": "Link to the video.",
+                        "type": ""
+                    }
+                }
+            },
+            "link": {
+                "type": "object",
+                "properties": {
+                    "Href": {
+                        "description": "The \"href\" attribute contains the link's IRI. atom:link elements MUST\nhave an href attribute, whose value MUST be a IRI reference",
+                        "type": "string"
+                    },
+                    "Rel": {
+                        "description": "atom:link elements MAY have a \"rel\" attribute that indicates the link\nrelation type.  If the \"rel\" attribute is not present, the link\nelement MUST be interpreted as if the link relation type is \"alternate\".",
+                        "type": "string"
+                    },
+                    "Type": {
+                        "description": "On the link element, the \"type\" attribute's value is an advisory\nmedia type: it is a hint about the type of the representation that is\nexpected to be returned when the value of the href attribute is\ndereferenced.  Note that the type attribute does not override the\nactual media type returned with the representation.",
+                        "type": "string"
+                    },
+                    "Title": {
+                        "description": "The \"title\" attribute conveys human-readable information about the\nlink.  The content of the \"title\" attribute is Language-Sensitive.",
+                        "type": "string"
+                    }
+                }
+            },
+            "AsposeResponse": {
+                "type": "object",
+                "properties": {
+                    "Code": {
+                        "description": "Response status code.",
+                        "type": ""
+                    },
+                    "Status": {
+                        "description": "Response status.",
+                        "type": "string"
+                    }
+                }
+            },
+            "AudioContainer": {
+                "type": "object",
+                "properties": {
+                    "Path": {
+                        "description": "Gets or sets a value determining the path of the audio file which will be added as new audio track.",
+                        "type": "string"
+                    },
+                    "Start": {
+                        "description": "Gets or sets a value determining the starting time point of the video from which the audio track will be added.\nDefault value is 0",
+                        "type": "integer"
+                    },
+                    "End": {
+                        "description": "Gets or sets a value determining the end time point of the video up to which the audio track will be added.\nDefault value is total video duration",
+                        "type": "integer"
+                    },
+                    "Offset": {
+                        "description": "Gets or sets a value determining the offset for the audio - from which time position of the audio should be used.\nDefault value is 0",
+                        "type": "integer"
+                    },
+                    "Volume": {
+                        "description": "Gets or sets a value determining the volume level for this audio track.\nDefault value is 100",
+                        "type": "integer"
+                    }
+                }
+            },
+            "Video": {
+                "type": "object",
+                "properties": {
+                    "Links": {
+                        "description": "A list of links that originate from this Video file.",
+                        "type": "array"
+                    },
+                    "FileName": {
+                        "description": "Gets the name of the file.",
+                        "type": "string"
+                    },
+                    "SourceFormat": {
+                        "description": "Gets the original format of the video.",
+                        "type": "string"
+                    },
+                    "VideoProperties": {
+                        "description": "Returns Video file properties.",
+                        "type": ""
+                    }
+                }
+            },
+            "Links": {
+                "type": "array"
+            },
+            "VideoProperties": {
+                "type": "object"
+            },
+            "AppendOptions": {
+                "type": "object",
+                "properties": {
+                    "Codec": {
+                        "description": "Gets or sets a value determining which  should be used for the resulting video.\nDefault value is .",
+                        "type": ""
+                    },
+                    "Preset": {
+                        "description": "Gets or sets a value determining which  level should be used for the encoding process.\nDefault value is .",
+                        "type": ""
+                    },
+                    "VideoToAppendPath": {
+                        "description": "Gets or sets a value determining which video file should be used for the appending process.",
+                        "type": "string"
+                    }
+                }
+            },
+            "ConvertOptions": {
+                "type": "object",
+                "properties": {
+                    "Codec": {
+                        "description": "Gets or sets a value determining which  should be used for the resulting video.\nDefault value is .",
+                        "type": ""
+                    },
+                    "Preset": {
+                        "description": "Gets or sets a value determining which  level should be used for the encoding process.\nDefault value is .",
+                        "type": ""
+                    },
+                    "standard": {
+                        "description": "Set the video standard:  PAL, NTSC, FILM",
+                        "type": ""
+                    },
+                    "FrameSize": {
+                        "description": "Represetns original resolution",
+                        "type": "string"
+                    },
+                    "aspectRatio": {
+                        "description": "Set result video aspect ratio",
+                        "type": ""
+                    },
+                    "Bitrate": {
+                        "description": "Represetns original video bitrate",
+                        "type": "integer"
+                    },
+                    "FPS": {
+                        "description": "Represetns original FPS",
+                        "type": "integer"
+                    },
+                    "watermark": {
+                        "description": "Set watermark image",
+                        "type": ""
+                    },
+                    "watermarkText": {
+                        "description": "Set watermark text",
+                        "type": ""
+                    },
+                    "PTS": {
+                        "description": "Set result video PTS",
+                        "type": ""
+                    },
+                    "Volume": {
+                        "description": "Gets or sets a value determining the volume level for this audio track.\nDefault value is 100",
+                        "type": "integer"
+                    }
+                }
+            },
+            "watermark": {
+                "type": "object"
+            },
+            "watermarkText": {
+                "type": "object"
+            },
+            "WatermarkImageOptions": {
+                "type": "object",
+                "properties": {
+                    "watermarkPath": {
+                        "description": "Path to the image ",
+                        "type": "string"
+                    },
+                    "startPos": {
+                        "description": "Time position from which the watermark will be addded in milliseconds",
+                        "type": "integer"
+                    },
+                    "length": {
+                        "description": "Time position up to which the watermark will be addded in milliseconds",
+                        "type": "integer"
+                    },
+                    "X": {
+                        "description": "X position coordinates",
+                        "type": "number"
+                    },
+                    "Y": {
+                        "description": "Y position coordinates",
+                        "type": "number"
+                    }
+                }
+            },
+            "WatermarkTextOptions": {
+                "type": "object",
+                "properties": {
+                    "Text": {
+                        "description": "Watermark text",
+                        "type": "string"
+                    },
+                    "startPos": {
+                        "description": "Time position from which the watermark will be addded in milliseconds",
+                        "type": "integer"
+                    },
+                    "length": {
+                        "description": "Time position up to which the watermark will be addded in milliseconds",
+                        "type": "integer"
+                    },
+                    "X": {
+                        "description": "X position coordinates",
+                        "type": "number"
+                    },
+                    "Y": {
+                        "description": "Y position coordinates",
+                        "type": "number"
+                    },
+                    "size": {
+                        "description": "Text size",
+                        "type": "integer"
+                    },
+                    "fontFile": {
+                        "description": "Path to the font file",
+                        "type": "string"
+                    },
+                    "color": {
+                        "description": "Color of the text",
+                        "type": ""
+                    }
+                }
+            },
+            "color": {
+                "type": "object"
+            },
+            "ValueType": {
+                "type": "object"
+            },
+            "SaveResult": {
+                "type": "object",
+                "properties": {
+                    "SourceVideo": {
+                        "description": "Link to source video.",
+                        "type": ""
+                    },
+                    "DestVideo": {
+                        "description": "Link to destination video.",
+                        "type": ""
+                    },
+                    "AdditionalItems": {
+                        "description": "Links to additional items (css, images etc).",
+                        "type": "array"
+                    }
+                }
+            },
+            "SourceVideo": {
+                "type": "object"
+            },
+            "DestVideo": {
+                "type": "object"
+            },
+            "AdditionalItems": {
+                "type": "array"
+            },
+            "ExtractThumbnailResult": {
+                "type": "object",
+                "properties": {
+                    "SourceVideo": {
+                        "description": "Link to source video.",
+                        "type": ""
+                    }
+                }
+            },
+            "ExtractVideoResult": {
+                "type": "object",
+                "properties": {
+                    "SourceVideo": {
+                        "description": "Link to source video.",
+                        "type": ""
+                    }
+                }
+            },
+            "LoadWebVideoData": {
+                "type": "object",
+                "properties": {
+                    "LoadingVideoUrl": {
+                        "description": "Web video url",
+                        "type": "string"
+                    },
+                    "SaveOptions": {
+                        "description": "Save options",
+                        "type": ""
+                    }
+                }
+            },
+            "SaveOptions": {
+                "type": "object"
+            },
+            "SaveOptionsData": {
+                "type": "object",
+                "properties": {
+                    "SaveFormat": {
+                        "description": "format of save",
+                        "type": "string"
+                    },
+                    "FileName": {
+                        "description": "Gets the name of the file.",
+                        "type": "string"
+                    },
+                    "ZipOutput": {
+                        "description": "Controls zip output or not.\nDefault value is false.",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "VideoPropertiesResponse": {
+                "type": "object"
+            },
+            "VideoPropertyResponse": {
+                "type": "object"
+            },
+            "VideoResponse": {
+                "type": "object"
+            },
+            "SaveResponse": {
+                "type": "object"
+            },
+            "ExtractThumbnailResponse": {
+                "type": "object"
+            },
+            "ExtractVideoResponse": {
+                "type": "object"
+            }
+        }
+    }
+}
