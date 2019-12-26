@@ -1,0 +1,572 @@
+{
+    "id": "a3d77a61aebd5e42832fce1f41b24731",
+    "name": "Platform (applications, usage etc.) API Reference",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "b02a401bf4aef9aaac246b5bd154025a",
+            "name": "Get the list of applications ",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/app",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "d1401309ec80d2b2dfbc113091131245",
+            "name": "Create new application ",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/app",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "dbc00bb375041b8a05681be1bd69ef0c",
+            "name": "Get application by name ",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/app\/{name}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Application name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "b92f8bc763045880397f50b8dc8e5383",
+            "name": "Update application by name ",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/app\/{name}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Application name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "5011c32b7e959614c66b724b0245e7bf",
+            "name": "Delete application by name ",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/app\/{name}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Application name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "61cc72d00762c528c64734e4ed8d8284",
+            "name": "Get application usage by period ",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/app\/{name}\/usage",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Application name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start",
+                    "description": "Period start date (period includes the start date)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end",
+                    "description": "Period end date (period does not includes the end date)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "01d3d927744cecf163aec4d5ea24eabf",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/statistics",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "2e77ac163a172d7e93b437490120b63c",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/statistics\/hours",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "startDate",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "endDate",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "9a4360f3faececf5b1eac3bcb540dda5",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/statistics\/hours\/last30Days",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "f7fad58077518b59cb09090d2fd0ccf2",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/statistics\/likeGD",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "045429379146d73d4d723385ddc1a4d5",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/statistics\/plans",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "471de3c85999c516cc03a7da49bff254",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/statistics\/errors",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "a4c5a81cb8215122fd0f2c25cf8c434a",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/statistics\/paid",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "54e6e9f90103f33dbf0b04059f4dd6ed",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/statistics\/free",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "511975b6b512d958d2403f4523052631",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/statistics\/calls",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "41cbbd5cf0c1b8c8b3a347c93bfce991",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/statistics\/overdrafts",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "9b06708f7411a90a05607850b934fdb8",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/statistics\/currentUsers",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "86c610c0025f60b932cad392ea09135d",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/usage",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "start",
+                    "description": "Period start date (period includes the start date)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end",
+                    "description": "Period end date (period does not includes the end date)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "e88415c7bb047cc79511cced13430e27",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/usage\/currentPeriod",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "8f1efd290ed4a9b74165e7d92b622e83",
+            "name": "Get usage logs for previous subscription period.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/usage\/previousPeriod",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        },
+        {
+            "id": "e1ef4c2a480535d37bcfc86a0f276b87",
+            "name": "",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/usage\/summary",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3d77a61aebd5e42832fce1f41b24731",
+            "rawModeData": ""
+        }
+    ]
+}
