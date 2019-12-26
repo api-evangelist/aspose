@@ -1,0 +1,1434 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "3.0",
+        "title": "Aspose.ThreeD Cloud API Reference",
+        "description": "",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.aspose.cloud\/v3.0"
+    ],
+    "paths": {
+        "\/3d\/root": {
+            "post": {
+                "summary": "Parametric Modeling\uff0c Create a Entity with size and located in ...",
+                "description": "",
+                "operationId": "PostModel",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "The name of the source file."
+                    },
+                    {
+                        "name": "newformat",
+                        "in": "query",
+                        "description": "new format of the source file."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "The folder of the source file."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "The storage type"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/nodes": {
+            "delete": {
+                "summary": "Delete nodes from scene,nodes are addressed by Object Addressing Path",
+                "description": "",
+                "operationId": "DeleteNodes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "The name of the source file."
+                    },
+                    {
+                        "name": "objectaddressingpath",
+                        "in": "query",
+                        "description": "The object addressing path."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "The folder of the source file."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "The storage type"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/new": {
+            "post": {
+                "summary": "Create new file with specified format.\n            ",
+                "description": "",
+                "operationId": "PostCreate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "The format of the new file."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/saveas\/newformat": {
+            "post": {
+                "summary": "Convert file on server to other formats with fileformat parameter\n            ",
+                "description": "",
+                "operationId": "PostConvertByFormat",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "The name of the source file."
+                    },
+                    {
+                        "name": "newformat",
+                        "in": "query",
+                        "description": "new format of the source file."
+                    },
+                    {
+                        "name": "newfilename",
+                        "in": "query",
+                        "description": "The name of the new file."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "The folder of the source file."
+                    },
+                    {
+                        "name": "IsOverwrite",
+                        "in": "query",
+                        "description": "Overwrite the source file? true or false."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "The storage type"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/saveas\/saveoption": {
+            "post": {
+                "summary": "Convert file on server to other formats with saveOption parameter\n            ",
+                "description": "",
+                "operationId": "PostConvertByOpt",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "The name of the source file."
+                    },
+                    {
+                        "name": "newfilename",
+                        "in": "query",
+                        "description": "The name of the new file."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "The folder of the source file."
+                    },
+                    {
+                        "name": "IsOverwrite",
+                        "in": "query",
+                        "description": "Overwrite the source file? true or false."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "The storage type"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/saveas\/part": {
+            "post": {
+                "summary": "Convert part of the file into different format",
+                "description": "",
+                "operationId": "PostSaveAsPart",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "The name of the source file."
+                    },
+                    {
+                        "name": "objectaddressingpath",
+                        "in": "query",
+                        "description": "The object addressing path."
+                    },
+                    {
+                        "name": "newformat",
+                        "in": "query",
+                        "description": "new format of the source file."
+                    },
+                    {
+                        "name": "newfilename",
+                        "in": "query",
+                        "description": "The name of the new file."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "The folder of the source file."
+                    },
+                    {
+                        "name": "IsOverwrite",
+                        "in": "query",
+                        "description": "Overwrite the source file? true or false."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "The storage type"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/extract\/rawdata": {
+            "post": {
+                "summary": "Extract raw data(without any modification) from a password protected PDF file\n            ",
+                "description": "",
+                "operationId": "PostPdfRawData",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "The name of the source file."
+                    },
+                    {
+                        "name": "multifileprefix",
+                        "in": "query",
+                        "description": "The file name for generated raw date"
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "The password to open the PDF"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "The folder of the source file."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "The storage type"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/extract\/scene": {
+            "post": {
+                "summary": "Extract and save in different format\n            ",
+                "description": "",
+                "operationId": "PostSceneToFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "The name of the source file."
+                    },
+                    {
+                        "name": "multifileprefix",
+                        "in": "query",
+                        "description": "The file name for generated raw date"
+                    },
+                    {
+                        "name": "newformat",
+                        "in": "query",
+                        "description": "new format of the source file."
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "The password to open the PDF"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "The folder of the source file."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "The storage type"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/triangulate\/new": {
+            "post": {
+                "summary": "Triangulate whole file and save to the different file",
+                "description": "",
+                "operationId": "PostTriangulateNew",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "The name of the source file."
+                    },
+                    {
+                        "name": "newfilename",
+                        "in": "query",
+                        "description": "The name of the new file."
+                    },
+                    {
+                        "name": "newformat",
+                        "in": "query",
+                        "description": "new format of the source file."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "The folder of the source file."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "The storage type"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/triangulate\/original": {
+            "post": {
+                "summary": "Triangulate whole file and save to original file",
+                "description": "",
+                "operationId": "PostTriangulateOriginal",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "The name of the source file."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "The folder of the source file."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "The storage type"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/storage\/file\/{path}": {
+            "get": {
+                "summary": "Download file",
+                "description": "",
+                "operationId": "DownloadFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Upload file",
+                "description": "",
+                "operationId": "UploadFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "File",
+                        "in": "formData",
+                        "description": "File to upload"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete file",
+                "description": "",
+                "operationId": "DeleteFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/storage\/file\/copy\/{srcPath}": {
+            "put": {
+                "summary": "Copy file",
+                "description": "",
+                "operationId": "CopyFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/storage\/file\/move\/{srcPath}": {
+            "put": {
+                "summary": "Move file",
+                "description": "",
+                "operationId": "MoveFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/storage\/folder\/{path}": {
+            "get": {
+                "summary": "Get all files and folders within a folder",
+                "description": "",
+                "operationId": "GetFilesList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Create the folder",
+                "description": "",
+                "operationId": "CreateFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete folder",
+                "description": "",
+                "operationId": "DeleteFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "recursive",
+                        "in": "query",
+                        "description": "Enable to delete folders, subfolders and files"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/storage\/folder\/copy\/{srcPath}": {
+            "put": {
+                "summary": "Copy folder",
+                "description": "",
+                "operationId": "CopyFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/storage\/folder\/move\/{srcPath}": {
+            "put": {
+                "summary": "Move folder",
+                "description": "",
+                "operationId": "MoveFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/storage\/{storageName}\/exist": {
+            "get": {
+                "summary": "Check if storage exists",
+                "description": "",
+                "operationId": "StorageExists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "storageName",
+                        "in": "path",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/storage\/exist\/{path}": {
+            "get": {
+                "summary": "Check if file or folder exists",
+                "description": "",
+                "operationId": "ObjectExists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/storage\/disc": {
+            "get": {
+                "summary": "Get disc usage",
+                "description": "",
+                "operationId": "GetDiscUsage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/3d\/storage\/version\/{path}": {
+            "get": {
+                "summary": "Get file versions",
+                "description": "",
+                "operationId": "GetFileVersions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "IActionResult with the operation status",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ModelData": {
+                "type": "object",
+                "properties": {
+                    "Type": {
+                        "description": "e.g Node",
+                        "type": "string"
+                    },
+                    "Transform": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "Entity": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Transform": {
+                "type": "object",
+                "properties": {
+                    "Translation": {
+                        "description": "Gets or sets the translation",
+                        "type": ""
+                    },
+                    "Scale": {
+                        "description": "Gets or sets the scale",
+                        "type": ""
+                    },
+                    "PreRotation": {
+                        "description": "Gets or sets the pre-rotation represented in degree",
+                        "type": ""
+                    },
+                    "PostRotation": {
+                        "description": "Gets or sets the post-rotation represented in degree",
+                        "type": ""
+                    },
+                    "EulerAngles": {
+                        "description": "Gets or sets the rotation represented in euler angles, measured in degree\n            ",
+                        "type": ""
+                    }
+                }
+            },
+            "Entity": {
+                "type": "object",
+                "properties": {
+                    "Type": {
+                        "description": "e.g Node",
+                        "type": "string"
+                    },
+                    "Box": {
+                        "description": "Gets or sets Box entity",
+                        "type": ""
+                    },
+                    "Cylinder": {
+                        "description": "Gets or sets Cylinder entity",
+                        "type": ""
+                    },
+                    "Sphere": {
+                        "description": "Gets or sets Sphere entity",
+                        "type": ""
+                    },
+                    "Torus": {
+                        "description": "Gets or sets Torus entity",
+                        "type": ""
+                    },
+                    "Plane": {
+                        "description": "Gets or sets Plane entity",
+                        "type": ""
+                    }
+                }
+            },
+            "Translation": {
+                "type": "object"
+            },
+            "Scale": {
+                "type": "object"
+            },
+            "PreRotation": {
+                "type": "object"
+            },
+            "PostRotation": {
+                "type": "object"
+            },
+            "EulerAngles": {
+                "type": "object"
+            },
+            "Vector3": {
+                "type": "object",
+                "properties": {
+                    "x": {
+                        "description": "The x component.",
+                        "type": "number"
+                    },
+                    "y": {
+                        "description": "The y component.",
+                        "type": "number"
+                    },
+                    "z": {
+                        "description": "The z component.",
+                        "type": "number"
+                    },
+                    "Length2": {
+                        "description": "Gets the square of the length.\n            ",
+                        "type": "number"
+                    },
+                    "Length": {
+                        "description": "Gets the length of this vector.",
+                        "type": "number"
+                    }
+                }
+            },
+            "Box": {
+                "type": "object",
+                "properties": {
+                    "Length": {
+                        "description": "Gets the length of this vector.",
+                        "type": "number"
+                    },
+                    "Width": {
+                        "description": "Gets or sets the width of the box",
+                        "type": "number"
+                    },
+                    "Height": {
+                        "description": "Gets or sets the height of the box",
+                        "type": "number"
+                    },
+                    "Name": {
+                        "description": "Gets or sets the name of the box\n            ",
+                        "type": "string"
+                    },
+                    "LengthSegments": {
+                        "description": "Gets or sets the lengthSegments of the box",
+                        "type": "integer"
+                    },
+                    "WidthSegments": {
+                        "description": "Gets or sets the widthSegments of the box",
+                        "type": "integer"
+                    },
+                    "HeightSegments": {
+                        "description": "Gets or sets the heightSegments of the box",
+                        "type": "integer"
+                    }
+                }
+            },
+            "Cylinder": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "Gets or sets the name of the box\n            ",
+                        "type": "string"
+                    },
+                    "RadiusTop": {
+                        "description": "Gets or sets the radius of cylinder's top cap.",
+                        "type": "number"
+                    },
+                    "RadiusBottom": {
+                        "description": "Gets or sets the radius bottoof cylinder's bottom cap.\n            ",
+                        "type": "number"
+                    },
+                    "Height": {
+                        "description": "Gets or sets the height of the box",
+                        "type": "number"
+                    },
+                    "RadialSegments": {
+                        "description": "Gets or sets the radial segments.",
+                        "type": "integer"
+                    },
+                    "HeightSegments": {
+                        "description": "Gets or sets the heightSegments of the box",
+                        "type": "integer"
+                    },
+                    "OpenEnded": {
+                        "description": "Gets or sets a value indicating whether this Aspose.ThreeD.Entities.Cylinder\nopen ended. The default value is false.",
+                        "type": "boolean"
+                    },
+                    "ThetaStart": {
+                        "description": "Gets or sets the theta start. The default value is 0.\n            ",
+                        "type": "number"
+                    },
+                    "ThetaLength": {
+                        "description": "Gets or sets the length of the theta. The default value is 2\u03c0.",
+                        "type": "number"
+                    }
+                }
+            },
+            "Sphere": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "Gets or sets the name of the box\n            ",
+                        "type": "string"
+                    },
+                    "WidthSegments": {
+                        "description": "Gets or sets the widthSegments of the box",
+                        "type": "integer"
+                    },
+                    "HeightSegments": {
+                        "description": "Gets or sets the heightSegments of the box",
+                        "type": "integer"
+                    },
+                    "PhiStart": {
+                        "description": "Gets or sets the phi start.\n            ",
+                        "type": "number"
+                    },
+                    "PhiLength": {
+                        "description": "Gets or sets the length of the phi.",
+                        "type": "number"
+                    },
+                    "ThetaStart": {
+                        "description": "Gets or sets the theta start. The default value is 0.\n            ",
+                        "type": "number"
+                    },
+                    "ThetaLength": {
+                        "description": "Gets or sets the length of the theta. The default value is 2\u03c0.",
+                        "type": "number"
+                    },
+                    "Radius": {
+                        "description": "Gets or sets the radius ",
+                        "type": "number"
+                    }
+                }
+            },
+            "Torus": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "Gets or sets the name of the box\n            ",
+                        "type": "string"
+                    },
+                    "Radius": {
+                        "description": "Gets or sets the radius ",
+                        "type": "number"
+                    },
+                    "Tube": {
+                        "description": "Gets or sets the radius of the tube.",
+                        "type": "number"
+                    },
+                    "RadialSegments": {
+                        "description": "Gets or sets the radial segments.",
+                        "type": "integer"
+                    },
+                    "TubularSegments": {
+                        "description": "Gets or sets the tubular segments.",
+                        "type": "integer"
+                    },
+                    "Arc": {
+                        "description": "Gets or sets the arc.",
+                        "type": "number"
+                    }
+                }
+            },
+            "Plane": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "Gets or sets the name of the box\n            ",
+                        "type": "string"
+                    },
+                    "Length": {
+                        "description": "Gets the length of this vector.",
+                        "type": "number"
+                    },
+                    "Width": {
+                        "description": "Gets or sets the width of the box",
+                        "type": "number"
+                    },
+                    "LengthSegments": {
+                        "description": "Gets or sets the lengthSegments of the box",
+                        "type": "integer"
+                    },
+                    "WidthSegments": {
+                        "description": "Gets or sets the widthSegments of the box",
+                        "type": "integer"
+                    }
+                }
+            },
+            "SaveOptions": {
+                "type": "object",
+                "properties": {
+                    "SaveFormat": {
+                        "description": "AMF\nCollada\nDiscreet3DS\nDraco\nFBX\nGLTF\nObj\nPDF\nPLY\nRvm\nSTL\nU3D",
+                        "type": ""
+                    },
+                    "FileSystem": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "LookupPaths": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "FileName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "FileFormat": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "directory": {
+                        "description": "for LocalFileSystem",
+                        "type": "string"
+                    }
+                }
+            },
+            "FileSystem": {
+                "type": "object",
+                "properties": {
+                    "FileSystemType": {
+                        "description": "FileSystemType in Aspose.3D.Cloud",
+                        "type": ""
+                    },
+                    "directory": {
+                        "description": "for LocalFileSystem",
+                        "type": "string"
+                    }
+                }
+            },
+            "LookupPaths": {
+                "type": "array"
+            },
+            "FilesUploadResult": {
+                "type": "object",
+                "properties": {
+                    "Uploaded": {
+                        "description": "List of uploaded file names",
+                        "type": "array"
+                    },
+                    "Errors": {
+                        "description": "List of errors.",
+                        "type": "array"
+                    }
+                }
+            },
+            "Uploaded": {
+                "type": "array"
+            },
+            "Errors": {
+                "type": "array"
+            },
+            "Error": {
+                "type": "object",
+                "properties": {
+                    "Code": {
+                        "description": "Code\n            ",
+                        "type": "string"
+                    },
+                    "Message": {
+                        "description": "Message\n            ",
+                        "type": "string"
+                    },
+                    "Description": {
+                        "description": "Description\n            ",
+                        "type": "string"
+                    },
+                    "InnerError": {
+                        "description": "Inner Error\n            ",
+                        "type": ""
+                    }
+                }
+            },
+            "InnerError": {
+                "type": "object"
+            },
+            "ErrorDetails": {
+                "type": "object",
+                "properties": {
+                    "RequestId": {
+                        "description": "The request id",
+                        "type": "string"
+                    },
+                    "Date": {
+                        "description": "Date",
+                        "type": "string"
+                    }
+                }
+            },
+            "FilesList": {
+                "type": "object",
+                "properties": {
+                    "Value": {
+                        "description": "Files and folders contained by folder StorageFile.",
+                        "type": "array"
+                    }
+                }
+            },
+            "Value": {
+                "type": "array"
+            },
+            "StorageFile": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "Gets or sets the name of the box\n            ",
+                        "type": "string"
+                    },
+                    "IsFolder": {
+                        "description": "True if it is a folder.",
+                        "type": "boolean"
+                    },
+                    "ModifiedDate": {
+                        "description": "File or folder last modified DateTime.",
+                        "type": "string"
+                    },
+                    "Size": {
+                        "description": "File or folder size.",
+                        "type": "integer"
+                    },
+                    "Path": {
+                        "description": "File or folder path.",
+                        "type": "string"
+                    }
+                }
+            },
+            "StorageExist": {
+                "type": "object",
+                "properties": {
+                    "Exists": {
+                        "description": "Shows that the storage exists.\n            ",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "ObjectExist": {
+                "type": "object",
+                "properties": {
+                    "Exists": {
+                        "description": "Shows that the storage exists.\n            ",
+                        "type": "boolean"
+                    },
+                    "IsFolder": {
+                        "description": "True if it is a folder.",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "DiscUsage": {
+                "type": "object",
+                "properties": {
+                    "UsedSize": {
+                        "description": "Application used disc space.",
+                        "type": "integer"
+                    },
+                    "TotalSize": {
+                        "description": "Total disc space.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "FileVersions": {
+                "type": "object",
+                "properties": {
+                    "Value": {
+                        "description": "Files and folders contained by folder StorageFile.",
+                        "type": "array"
+                    }
+                }
+            },
+            "FileVersion": {
+                "type": "object"
+            }
+        }
+    }
+}
