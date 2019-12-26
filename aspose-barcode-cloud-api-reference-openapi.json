@@ -1,0 +1,1250 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "3.0",
+        "title": "Aspose.Barcode Cloud API Reference",
+        "description": "",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.aspose.cloud\/v3.0"
+    ],
+    "paths": {
+        "\/barcode\/generate": {
+            "get": {
+                "summary": "Generate barcode.\n            ",
+                "description": "",
+                "operationId": "GetBarcodeGenerate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "text",
+                        "in": "query",
+                        "description": "The code text."
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Barcode type."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Result format."
+                    },
+                    {
+                        "name": "resolutionX",
+                        "in": "query",
+                        "description": "Horizontal resolution."
+                    },
+                    {
+                        "name": "resolutionY",
+                        "in": "query",
+                        "description": "Vertical resolution."
+                    },
+                    {
+                        "name": "dimensionX",
+                        "in": "query",
+                        "description": "Smallest width of barcode unit (bar or space)."
+                    },
+                    {
+                        "name": "dimensionY",
+                        "in": "query",
+                        "description": "Smallest height of barcode unit (for 2D barcodes)."
+                    },
+                    {
+                        "name": "enableChecksum",
+                        "in": "query",
+                        "description": "Sets if checksum will be generated."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/{name}\/generate": {
+            "put": {
+                "summary": "Generate barcode and save on server (from query params or from file with json or xml content)\n            ",
+                "description": "",
+                "operationId": "PutBarcodeGenerateFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The image name."
+                    },
+                    {
+                        "name": "text",
+                        "in": "query",
+                        "description": "The code text."
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Barcode type."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Result format."
+                    },
+                    {
+                        "name": "resolutionX",
+                        "in": "query",
+                        "description": "Horizontal resolution."
+                    },
+                    {
+                        "name": "resolutionY",
+                        "in": "query",
+                        "description": "Vertical resolution."
+                    },
+                    {
+                        "name": "dimensionX",
+                        "in": "query",
+                        "description": "Smallest width of barcode unit (bar or space)."
+                    },
+                    {
+                        "name": "dimensionY",
+                        "in": "query",
+                        "description": "Smallest height of barcode unit (for 2D barcodes)."
+                    },
+                    {
+                        "name": "codeLocation",
+                        "in": "query",
+                        "description": "CodeLocation property of the barcode. "
+                    },
+                    {
+                        "name": "grUnit",
+                        "in": "query",
+                        "description": "Measurement of barcode properties. "
+                    },
+                    {
+                        "name": "autoSize",
+                        "in": "query",
+                        "description": "Sets if barcode size will be updated automatically. "
+                    },
+                    {
+                        "name": "barHeight",
+                        "in": "query",
+                        "description": "Height of the bar. "
+                    },
+                    {
+                        "name": "imageHeight",
+                        "in": "query",
+                        "description": "Height of the image. "
+                    },
+                    {
+                        "name": "imageWidth",
+                        "in": "query",
+                        "description": "Width of the image. "
+                    },
+                    {
+                        "name": "imageQuality",
+                        "in": "query",
+                        "description": "Determines ImageQualityMode of the barcode image. "
+                    },
+                    {
+                        "name": "rotAngle",
+                        "in": "query",
+                        "description": "Angle of barcode orientation. "
+                    },
+                    {
+                        "name": "topMargin",
+                        "in": "query",
+                        "description": "Top margin. "
+                    },
+                    {
+                        "name": "bottomMargin",
+                        "in": "query",
+                        "description": "Bottom margin. "
+                    },
+                    {
+                        "name": "leftMargin",
+                        "in": "query",
+                        "description": "Left margin. "
+                    },
+                    {
+                        "name": "rightMargin",
+                        "in": "query",
+                        "description": "Right margin. "
+                    },
+                    {
+                        "name": "enableChecksum",
+                        "in": "query",
+                        "description": "Sets if checksum will be generated."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Images storage."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Images folder."
+                    },
+                    {
+                        "name": "File",
+                        "in": "formData",
+                        "description": "File to upload"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/{name}\/recognize": {
+            "get": {
+                "summary": "Recognize barcode from a file on server.\n            ",
+                "description": "",
+                "operationId": "GetBarcodeRecognize",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The image name."
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Barcode type."
+                    },
+                    {
+                        "name": "checksumValidation",
+                        "in": "query",
+                        "description": "Checksum validation parameter."
+                    },
+                    {
+                        "name": "stripFnc",
+                        "in": "query",
+                        "description": "Allows to strip FNC symbol in recognition results."
+                    },
+                    {
+                        "name": "rectX",
+                        "in": "query",
+                        "description": "Top left point X coordinate of Rectangle to recognize barcode inside."
+                    },
+                    {
+                        "name": "rectY",
+                        "in": "query",
+                        "description": "Top left point Y coordinate of Rectangle to recognize barcode inside."
+                    },
+                    {
+                        "name": "rectWidth",
+                        "in": "query",
+                        "description": "Width of Rectangle to recognize barcode inside."
+                    },
+                    {
+                        "name": "rectHeight",
+                        "in": "query",
+                        "description": "Height of Rectangle to recognize barcode inside."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Images storage."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Images folder."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Recognition of a barcode from file on server with parameters in body.\n            ",
+                "description": "",
+                "operationId": "PutBarcodeRecognizeFromBody",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The image name."
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Barcode type."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Images folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Images storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/recognize": {
+            "post": {
+                "summary": "Recognize barcode from an url or from request body. Request body can contain raw data bytes of the image or encoded\nwith base64.\n            ",
+                "description": "",
+                "operationId": "PostBarcodeRecognizeFromUrlorContent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Barcode type."
+                    },
+                    {
+                        "name": "checksumValidation",
+                        "in": "query",
+                        "description": "Checksum validation parameter."
+                    },
+                    {
+                        "name": "stripFnc",
+                        "in": "query",
+                        "description": "Allows to strip FNC symbol in recognition results."
+                    },
+                    {
+                        "name": "url",
+                        "in": "query",
+                        "description": "The image file url."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/generateMultiple": {
+            "post": {
+                "summary": "Generate multiple barcodes and return in response stream\n            ",
+                "description": "",
+                "operationId": "PostGenerateMultiple",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Result format."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/{name}\/generateMultiple": {
+            "put": {
+                "summary": "Generate image with multiple barcodes and put new file on server\n            ",
+                "description": "",
+                "operationId": "PutGenerateMultiple",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The image name."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Result format."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Images folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Images storage."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/storage\/file\/{path}": {
+            "get": {
+                "summary": "Download file",
+                "description": "",
+                "operationId": "DownloadFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Upload file",
+                "description": "",
+                "operationId": "UploadFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "File",
+                        "in": "formData",
+                        "description": "File to upload"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete file",
+                "description": "",
+                "operationId": "DeleteFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/storage\/file\/copy\/{srcPath}": {
+            "put": {
+                "summary": "Copy file",
+                "description": "",
+                "operationId": "CopyFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/storage\/file\/move\/{srcPath}": {
+            "put": {
+                "summary": "Move file",
+                "description": "",
+                "operationId": "MoveFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/storage\/folder\/{path}": {
+            "get": {
+                "summary": "Get all files and folders within a folder",
+                "description": "",
+                "operationId": "GetFilesList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Create the folder",
+                "description": "",
+                "operationId": "CreateFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete folder",
+                "description": "",
+                "operationId": "DeleteFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "recursive",
+                        "in": "query",
+                        "description": "Enable to delete folders, subfolders and files"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/storage\/folder\/copy\/{srcPath}": {
+            "put": {
+                "summary": "Copy folder",
+                "description": "",
+                "operationId": "CopyFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/storage\/folder\/move\/{srcPath}": {
+            "put": {
+                "summary": "Move folder",
+                "description": "",
+                "operationId": "MoveFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/storage\/{storageName}\/exist": {
+            "get": {
+                "summary": "Check if storage exists",
+                "description": "",
+                "operationId": "StorageExists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "storageName",
+                        "in": "path",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/storage\/exist\/{path}": {
+            "get": {
+                "summary": "Check if file or folder exists",
+                "description": "",
+                "operationId": "ObjectExists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/storage\/disc": {
+            "get": {
+                "summary": "Get disc usage",
+                "description": "",
+                "operationId": "GetDiscUsage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/barcode\/storage\/version\/{path}": {
+            "get": {
+                "summary": "Get file versions",
+                "description": "",
+                "operationId": "GetFileVersions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Generated barcode image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/FilesUploadResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "BarcodeReader": {
+                "type": "object",
+                "properties": {
+                    "ChecksumValidation": {
+                        "description": "Gets or sets ChecksumValidation property.\n            ",
+                        "type": ""
+                    },
+                    "StripFNC": {
+                        "description": "Gets or sets a value indicating whether FNC symbol strip must be done.\n            ",
+                        "type": "boolean"
+                    },
+                    "RecognitionMode": {
+                        "description": "Gets or sets recognition mode.\n            ",
+                        "type": ""
+                    },
+                    "ManualHints": {
+                        "description": "Gets or sets manual hints.\n            ",
+                        "type": ""
+                    }
+                }
+            },
+            "BarcodeBuildersList": {
+                "type": "object",
+                "properties": {
+                    "BarcodeBuilders": {
+                        "description": "List of barcode builders\n            ",
+                        "type": "array"
+                    },
+                    "XStep": {
+                        "description": "Shift step according to X axis\n            ",
+                        "type": "integer"
+                    },
+                    "YStep": {
+                        "description": "Shift step according to Y axis\n            ",
+                        "type": "integer"
+                    }
+                }
+            },
+            "BarcodeBuilders": {
+                "type": "array"
+            },
+            "BarcodeBuilder": {
+                "type": "object",
+                "properties": {
+                    "TypeOfBarcode": {
+                        "description": "Gets or sets type of barcode to generate.\n            ",
+                        "type": ""
+                    },
+                    "Text": {
+                        "description": "Gets or sets text to encode.\n            ",
+                        "type": "string"
+                    },
+                    "Resolution": {
+                        "description": "Gets or sets Resolution parameters.\n            ",
+                        "type": ""
+                    },
+                    "DimensionX": {
+                        "description": "Gets or sets smallest width unit of barcode.\n            ",
+                        "type": "number"
+                    },
+                    "DimensionY": {
+                        "description": "Gets or sets smallest height unit of barcode.\n            ",
+                        "type": "number"
+                    },
+                    "CodeLocation": {
+                        "description": "Gets or sets CodeLocation of barcode.\n            ",
+                        "type": ""
+                    },
+                    "GraphicsUnit": {
+                        "description": "Gets or sets GraphicsUnit for barcode dimension parameers.\n            ",
+                        "type": ""
+                    },
+                    "AutoSize": {
+                        "description": "Gets or sets a value indicating whether size of barcode changes automatically.\n            ",
+                        "type": "boolean"
+                    },
+                    "BarHeight": {
+                        "description": "Gets or sets height of the barcode.\n            ",
+                        "type": "number"
+                    },
+                    "ImageHeight": {
+                        "description": "Gets or sets height of the barcode image.\n            ",
+                        "type": "number"
+                    },
+                    "ImageWidth": {
+                        "description": "Gets or sets width of the barcode image.\n            ",
+                        "type": "number"
+                    },
+                    "ImageQuality": {
+                        "description": "Gets or sets ImageQualityMode of the image.\n            ",
+                        "type": ""
+                    },
+                    "RotationAngle": {
+                        "description": "Gets or sets angle of barcode orientation.\n            ",
+                        "type": "number"
+                    },
+                    "Margins": {
+                        "description": "Gets or sets Margins around barcode.\n            ",
+                        "type": ""
+                    },
+                    "BackColor": {
+                        "description": "Gets or sets background color.\n            ",
+                        "type": "string"
+                    },
+                    "ForeColor": {
+                        "description": "Gets or sets foreground color.\n            ",
+                        "type": "string"
+                    },
+                    "CodeTextColor": {
+                        "description": "Gets or sets color of the code text.\n            ",
+                        "type": "string"
+                    },
+                    "BorderColor": {
+                        "description": "Gets or sets color of the border.\n            ",
+                        "type": "string"
+                    },
+                    "BorderVisible": {
+                        "description": "Gets or sets a value indicating whether border is visible.\n            ",
+                        "type": "boolean"
+                    },
+                    "EnableChecksum": {
+                        "description": "Gets or sets a value indicating whether checksum is enabled.\n            ",
+                        "type": ""
+                    }
+                }
+            },
+            "Resolution": {
+                "type": "object",
+                "properties": {
+                    "ResolutionX": {
+                        "description": "Gets or sets resolution along X axis.\n            ",
+                        "type": "number"
+                    },
+                    "ResolutionY": {
+                        "description": "Gets or sets resolution along Y axis.\n            ",
+                        "type": "number"
+                    }
+                }
+            },
+            "Margins": {
+                "type": "object",
+                "properties": {
+                    "Left": {
+                        "description": "Gets or sets left margin.\n            ",
+                        "type": "number"
+                    },
+                    "Right": {
+                        "description": "Gets or sets Right margin.\n            ",
+                        "type": "number"
+                    },
+                    "Top": {
+                        "description": "Gets or sets top margin.\n            ",
+                        "type": "number"
+                    },
+                    "Bottom": {
+                        "description": "Gets or sets bottom margin.\n            ",
+                        "type": "number"
+                    }
+                }
+            },
+            "FilesUploadResult": {
+                "type": "object",
+                "properties": {
+                    "Uploaded": {
+                        "description": "List of uploaded file names",
+                        "type": "array"
+                    },
+                    "Errors": {
+                        "description": "List of errors.",
+                        "type": "array"
+                    }
+                }
+            },
+            "Uploaded": {
+                "type": "array"
+            },
+            "Errors": {
+                "type": "array"
+            },
+            "Error": {
+                "type": "object",
+                "properties": {
+                    "Code": {
+                        "description": "Code\n            ",
+                        "type": "string"
+                    },
+                    "Message": {
+                        "description": "Message\n            ",
+                        "type": "string"
+                    },
+                    "Description": {
+                        "description": "Description\n            ",
+                        "type": "string"
+                    },
+                    "InnerError": {
+                        "description": "Inner Error\n            ",
+                        "type": ""
+                    }
+                }
+            },
+            "InnerError": {
+                "type": "object"
+            },
+            "ErrorDetails": {
+                "type": "object",
+                "properties": {
+                    "RequestId": {
+                        "description": "The request id",
+                        "type": "string"
+                    },
+                    "Date": {
+                        "description": "Date",
+                        "type": "string"
+                    }
+                }
+            },
+            "FilesList": {
+                "type": "object",
+                "properties": {
+                    "Value": {
+                        "description": "Files and folders contained by folder StorageFile.",
+                        "type": "array"
+                    }
+                }
+            },
+            "Value": {
+                "type": "array"
+            },
+            "StorageFile": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "File or folder name.",
+                        "type": "string"
+                    },
+                    "IsFolder": {
+                        "description": "True if it is a folder.",
+                        "type": "boolean"
+                    },
+                    "ModifiedDate": {
+                        "description": "File or folder last modified DateTime.",
+                        "type": "string"
+                    },
+                    "Size": {
+                        "description": "File or folder size.",
+                        "type": "integer"
+                    },
+                    "Path": {
+                        "description": "File or folder path.",
+                        "type": "string"
+                    }
+                }
+            },
+            "StorageExist": {
+                "type": "object",
+                "properties": {
+                    "Exists": {
+                        "description": "Shows that the storage exists.\n            ",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "ObjectExist": {
+                "type": "object",
+                "properties": {
+                    "Exists": {
+                        "description": "Shows that the storage exists.\n            ",
+                        "type": "boolean"
+                    },
+                    "IsFolder": {
+                        "description": "True if it is a folder.",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "DiscUsage": {
+                "type": "object",
+                "properties": {
+                    "UsedSize": {
+                        "description": "Application used disc space.",
+                        "type": "integer"
+                    },
+                    "TotalSize": {
+                        "description": "Total disc space.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "FileVersions": {
+                "type": "object",
+                "properties": {
+                    "Value": {
+                        "description": "Files and folders contained by folder StorageFile.",
+                        "type": "array"
+                    }
+                }
+            },
+            "FileVersion": {
+                "type": "object"
+            }
+        }
+    }
+}
