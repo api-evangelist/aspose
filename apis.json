@@ -7,16 +7,18 @@
         "conversions",
         "documents",
         "have api",
+        "have swagger",
+        "new",
         "service api",
         "target"
     ],
-    "created": "2019-12-20",
-    "modified": "2019-12-20",
+    "created": "2019-12-25",
+    "modified": "2019-12-25",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
         {
-            "name": "Aspose.Storage API",
+            "name": "Platform (applications, usage etc.) API Reference",
             "description": null,
             "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
             "humanURL": "http:\/\/aspose.com",
@@ -25,16 +27,20 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/aspose-storage-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/platform-applications-usage-etc--api-reference-openapi.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-storage-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/platform-applications-usage-etc--api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v1.1\/platform\/swagger\/spec"
                 }
             ]
         },
         {
-            "name": "Aspose",
+            "name": "Aspose.OMR for Cloud API Reference",
             "description": null,
             "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
             "humanURL": "http:\/\/aspose.com",
@@ -43,11 +49,301 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/aspose.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-omr-for-cloud-api-reference-openapi.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-omr-for-cloud-api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v1.1\/omr\/swagger\/spec"
+                }
+            ]
+        },
+        {
+            "name": "Aspose.Video for Cloud API References",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
+            "humanURL": "http:\/\/aspose.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-video-for-cloud-api-references-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-video-for-cloud-api-references-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v1.1\/video\/swagger\/spec"
+                }
+            ]
+        },
+        {
+            "name": "Aspose.ThreeD Cloud API Reference",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
+            "humanURL": "http:\/\/aspose.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-threed-cloud-api-reference-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-threed-cloud-api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v3.0\/3d\/swagger\/spec"
+                }
+            ]
+        },
+        {
+            "name": "Aspose.CAD for Cloud API Reference",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
+            "humanURL": "http:\/\/aspose.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-cad-for-cloud-api-reference-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-cad-for-cloud-api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v1.1\/cad\/swagger\/spec"
+                }
+            ]
+        },
+        {
+            "name": "Aspose.HTML Cloud API Reference",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
+            "humanURL": "http:\/\/aspose.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-html-cloud-api-reference-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-html-cloud-api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v3.0\/html\/swagger\/spec"
+                }
+            ]
+        },
+        {
+            "name": "Aspose.Diagram for Cloud API Reference",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
+            "humanURL": "http:\/\/aspose.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-diagram-for-cloud-api-reference-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-diagram-for-cloud-api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v1.1\/diagram\/swagger\/spec"
+                }
+            ]
+        },
+        {
+            "name": "Aspose.Tasks Cloud API Reference",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
+            "humanURL": "http:\/\/aspose.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-tasks-cloud-api-reference-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-tasks-cloud-api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v3.0\/tasks\/swagger\/spec"
+                }
+            ]
+        },
+        {
+            "name": "Aspose.Barcode Cloud API Reference",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
+            "humanURL": "http:\/\/aspose.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-barcode-cloud-api-reference-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-barcode-cloud-api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v3.0\/barcode\/swagger\/spec"
+                }
+            ]
+        },
+        {
+            "name": "Aspose.Imaging Cloud API Reference",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
+            "humanURL": "http:\/\/aspose.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-imaging-cloud-api-reference-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-imaging-cloud-api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v3.0\/imaging\/swagger\/spec"
+                }
+            ]
+        },
+        {
+            "name": "Aspose.Slides Cloud API Reference",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
+            "humanURL": "http:\/\/aspose.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-slides-cloud-api-reference-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-slides-cloud-api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v3.0\/slides\/swagger\/spec"
+                }
+            ]
+        },
+        {
+            "name": "Aspose.Email Cloud API Reference",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
+            "humanURL": "http:\/\/aspose.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-email-cloud-api-reference-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-email-cloud-api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v3.0\/email\/swagger\/spec"
+                }
+            ]
+        },
+        {
+            "name": "Aspose.PDF Cloud API Reference",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
+            "humanURL": "http:\/\/aspose.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-pdf-cloud-api-reference-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-pdf-cloud-api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v3.0\/pdf\/swagger\/spec"
+                }
+            ]
+        },
+        {
+            "name": "Aspose.Words Cloud API Reference",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
+            "humanURL": "http:\/\/aspose.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-words-cloud-api-reference-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-words-cloud-api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v4.0\/words\/swagger\/spec"
+                }
+            ]
+        },
+        {
+            "name": "Aspose.Cells Cloud API Reference",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1865-aspose.jpg",
+            "humanURL": "http:\/\/aspose.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-cells-cloud-api-reference-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/aspose\/master\/aspose-cells-cloud-api-reference-postman-collection.json"
+                },
+                {
+                    "type": "x-source",
+                    "url": "https:\/\/api.aspose.cloud\/v3.0\/cells\/swagger\/spec"
                 }
             ]
         }
@@ -91,6 +387,74 @@
             "url": "https:\/\/github.com\/aspose"
         },
         {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-20-50-30.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-20-51-23.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-20-54-51.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-20-56-29.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-20-57-31.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-20-58-15.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-20-59-19.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-21-00-15.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-21-01-29.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-21-02-22.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-21-03-19.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-21-04-21.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-21-06-28.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-21-07-54.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-21-09-12.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-21-10-58.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1865-2019-12-25-21-12-55.json"
+        },
+        {
             "type": "Pricing",
             "url": "http:\/\/www.aspose.com\/purchase\/pricing-info-step-1-of-4.aspx"
         },
@@ -111,8 +475,8 @@
             "url": "http:\/\/www.youtube.com\/user\/asposevideo"
         },
         {
-            "type": "Website",
-            "url": "http:\/\/www.aspose.com"
+            "type": "Base URL",
+            "url": "http:\/\/api.aspose.cloud"
         },
         {
             "type": "Website",
