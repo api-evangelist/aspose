@@ -1,0 +1,2515 @@
+{
+    "id": "cf61fceb6486a262e656d9f1de1b3e00",
+    "name": "Aspose.HTML Cloud API Reference",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "c45e6b21ba28248679a16d26c0244751",
+            "name": "Converts the HTML document (located on storage) to the specified image format and returns resulting file in response content.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{name}\/convert\/image\/{outFormat}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outFormat",
+                    "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Resulting image width in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Resulting image height in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leftMargin",
+                    "description": "Left resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rightMargin",
+                    "description": "Right resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "topMargin",
+                    "description": "Top resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bottomMargin",
+                    "description": "Bottom resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resolution",
+                    "description": "Resolution of resulting image. Default is 96 dpi.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "27b8b5582b223a37770198711f29ce01",
+            "name": "Converts the HTML document (located on storage) to the specified image format and uploads resulting file to storage.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{name}\/convert\/image\/{outFormat}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outFormat",
+                    "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Resulting image width in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Resulting image height in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leftMargin",
+                    "description": "Left resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rightMargin",
+                    "description": "Right resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "topMargin",
+                    "description": "Top resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bottomMargin",
+                    "description": "Bottom resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resolution",
+                    "description": "Resolution of resulting image. Default is 96 dpi.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "a9497d627260a5ac5358b779692c2699",
+            "name": "Converts the HTML document (located on storage) to PDF and returns resulting file in response content.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{name}\/convert\/pdf",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Resulting image width in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Resulting image height in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leftMargin",
+                    "description": "Left resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rightMargin",
+                    "description": "Right resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "topMargin",
+                    "description": "Top resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bottomMargin",
+                    "description": "Bottom resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "562716e787f2e7231a1fd7c18a925070",
+            "name": "Converts the HTML document (located on storage) to PDF and uploads resulting file to storage.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{name}\/convert\/pdf",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Resulting image width in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Resulting image height in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leftMargin",
+                    "description": "Left resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rightMargin",
+                    "description": "Right resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "topMargin",
+                    "description": "Top resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bottomMargin",
+                    "description": "Bottom resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "7752881df1ea9422fbe11489066864ae",
+            "name": "Converts the HTML document (located on storage) to XPS and returns resulting file in response content.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{name}\/convert\/xps",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Resulting image width in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Resulting image height in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leftMargin",
+                    "description": "Left resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rightMargin",
+                    "description": "Right resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "topMargin",
+                    "description": "Top resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bottomMargin",
+                    "description": "Bottom resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "13f496bbac95194d539c40642bf2df8f",
+            "name": "Converts the HTML document (located on storage) to XPS and uploads resulting file to storage.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{name}\/convert\/xps",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Resulting image width in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Resulting image height in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leftMargin",
+                    "description": "Left resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rightMargin",
+                    "description": "Right resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "topMargin",
+                    "description": "Top resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bottomMargin",
+                    "description": "Bottom resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "703e263a709b133e4fefee68b78fe45d",
+            "name": "Converts the HTML page (located in the Web) to the specified image format and returns resulting file in response content.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/convert\/image\/{outFormat}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sourceUrl",
+                    "description": "Source page URL.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outFormat",
+                    "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Resulting image width in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Resulting image height in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leftMargin",
+                    "description": "Left resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rightMargin",
+                    "description": "Right resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "topMargin",
+                    "description": "Top resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bottomMargin",
+                    "description": "Bottom resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resolution",
+                    "description": "Resolution of resulting image. Default is 96 dpi.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "0f53c7e176e4a727c308398f4cefb03c",
+            "name": "Converts the HTML document (in request content) to the specified image format and uploads resulting file to storage.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/convert\/image\/{outFormat}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "outPath",
+                    "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outFormat",
+                    "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Resulting image width in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Resulting image height in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leftMargin",
+                    "description": "Left resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rightMargin",
+                    "description": "Right resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "topMargin",
+                    "description": "Top resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bottomMargin",
+                    "description": "Bottom resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resolution",
+                    "description": "Resolution of resulting image. Default is 96 dpi.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "A file to be converted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "fd80ebb476780be5adec60aa6bf3e15e",
+            "name": "Convert the HTML page (located in the Web) to PDF and returns resulting file in response content.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/convert\/pdf",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sourceUrl",
+                    "description": "Source page URL.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Resulting image width in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Resulting image height in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leftMargin",
+                    "description": "Left resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rightMargin",
+                    "description": "Right resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "topMargin",
+                    "description": "Top resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bottomMargin",
+                    "description": "Bottom resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "e4a79c1c66f0fff85d75ae811964018a",
+            "name": "Converts the HTML document (in request content) to PDF and uploads resulting file to stora, ge.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/convert\/pdf",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "outPath",
+                    "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Resulting image width in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Resulting image height in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leftMargin",
+                    "description": "Left resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rightMargin",
+                    "description": "Right resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "topMargin",
+                    "description": "Top resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bottomMargin",
+                    "description": "Bottom resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "A file to be converted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "76a640e73ee0f4cb0be1b428fca8f962",
+            "name": "Converts the HTML page (located in the Web) to XPS and returns resulting file in response content.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/convert\/xps",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sourceUrl",
+                    "description": "Source page URL.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Resulting image width in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Resulting image height in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leftMargin",
+                    "description": "Left resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rightMargin",
+                    "description": "Right resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "topMargin",
+                    "description": "Top resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bottomMargin",
+                    "description": "Bottom resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "7ae4bb8bf13434a9a219dd87bc84d630",
+            "name": "Converts the HTML document (in request content) to XPS and uploads resulting file to storage.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/convert\/xps",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "outPath",
+                    "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Resulting image width in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Resulting image height in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leftMargin",
+                    "description": "Left resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rightMargin",
+                    "description": "Right resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "topMargin",
+                    "description": "Top resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bottomMargin",
+                    "description": "Bottom resulting image margin in points (1\/96 inch).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "A file to be converted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "97e0d9237df37d500e08d635be4bfcb2",
+            "name": "Converts the HTML document (located on storage) to Markdown and returns resulting file in response content.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{name}\/convert\/md",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "useGit",
+                    "description": "Use Git Markdown flavor to save.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "d87203685a810f8b55d6b1d822d04102",
+            "name": "Converts the HTML document (located on storage) to Markdown and uploads resulting file to storage by specified path.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{name}\/convert\/md",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "useGit",
+                    "description": "Use Git Markdown flavor to save.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "db39929d20d92ba286f4459e39d2320b",
+            "name": "Converts the HTML document (in request content) to Markdown and uploads resulting file to storage by specified path.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/convert\/md",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "outPath",
+                    "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "useGit",
+                    "description": "Use Git Markdown flavor to save.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "A file to be converted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "3f38e82a540d01f465c44f7f691bcf35",
+            "name": "Converts the HTML page from Web by its URL to MHTML returns resulting file in response content.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/convert\/mhtml",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sourceUrl",
+                    "description": "Source page URL.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "64fa0583439e42985448bb923b44ef21",
+            "name": "Return HTML page from Web with linked resources packaged as a ZIP archive by the source page URL.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/download",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sourceUrl",
+                    "description": "Source page URL.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "5cc2abd1da3769088b1c8f9a0a8e9900",
+            "name": "Return all HTML document images packaged as a ZIP archive.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{name}\/images\/all",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "4ff731aa1b5a8800f3bd31eae7f87a88",
+            "name": "Return all HTML page images packaged as a ZIP archive by the source page URL.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/images\/all",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sourceUrl",
+                    "description": "Source page URL.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "94adf0d652736c7ba3e0278e553f42e6",
+            "name": "Return list of HTML fragments matching the specified XPath query. ",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{name}\/fragments\/{outFormat}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "xPath",
+                    "description": "XPath query string.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outFormat",
+                    "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "827624a61bc435bb057cd9acf1b18179",
+            "name": "Return list of HTML fragments matching the specified XPath query by the source page URL.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/fragments\/{outFormat}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sourceUrl",
+                    "description": "Source page URL.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "xPath",
+                    "description": "XPath query string.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outFormat",
+                    "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "6da2d3d345b99203a86ec67c6b1b9f20",
+            "name": "Return list of HTML fragments matching the specified CSS selector.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{name}\/fragments\/css\/{outFormat}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "selector",
+                    "description": "CSS selector string.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outFormat",
+                    "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "fe442c60da665bcbe442d338b68fb416",
+            "name": "Return list of HTML fragments matching the specified CSS selector by the source page URL.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/fragments\/css\/{outFormat}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sourceUrl",
+                    "description": "Source page URL.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "selector",
+                    "description": "CSS selector string.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outFormat",
+                    "description": "Resulting image format. Supported values are: jpeg, bmp, png, gif, tiff",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "b301c7a01378efbbf1533b5e41bc82bc",
+            "name": "Creates an HTML document from Markdown file (located on storage) and returns resulting file in response content.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{name}\/import\/md",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "dea637e129783e064d687abeef35c5fc",
+            "name": "Creates an HTML document from Markdown file (located on storage) and uploads resulting file to the storage.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{name}\/import\/md",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "e4e3da34f3836fbb1cf6d8ce6d9e231b",
+            "name": "Creates an HTML document from Markdown file (in request content) and uploads resulting file to the storage.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/import\/md",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "outPath",
+                    "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "1e1e0ee7dd780c72d76a9a0875974095",
+            "name": "Return SEO warnings in json format.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/seo",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "addr",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "27a9f1288010a507ebccd71d2e8c863b",
+            "name": "Populate HTML document template with data located as a file in the storage.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{templateName}\/merge",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "templateName",
+                    "description": "Template document name. Template document is HTML or zipped HTML.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dataPath",
+                    "description": "Data source file path in the storage. Supported data formats: XML, JSON. File name extension must match the format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "options",
+                    "description": "Template merge options: JSON list of name-value pairs",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "f1df2419cc79bfb0feb0a162eae6c88f",
+            "name": "Populate HTML document template with data from the request body. Result document will be saved to storage.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/{templateName}\/merge",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "templateName",
+                    "description": "Template document name. Template document is HTML or zipped HTML.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Full resulting filename (ex. \/folder1\/folder2\/result.jpg)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "options",
+                    "description": "Template merge options: JSON list of name-value pairs",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Source document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Source document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "A file to be converted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "b46ca75cd1c483b6416d945a889eefb2",
+            "name": "Download file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "da6072904213f1367b2b67b6ff022518",
+            "name": "Upload file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "A file to be converted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "b08b516821e797d0e8682d7a386b5bb1",
+            "name": "Delete file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "88673425cb9c008434176fd9555ba4b1",
+            "name": "Copy file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/file\/copy\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "5a28b3835992202c214876ef4e84549b",
+            "name": "Move file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/file\/move\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "2c79387f7f96d29efe03d111c5643cda",
+            "name": "Get all files and folders within a folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "c40b8523d5027408982619a51433edd2",
+            "name": "Create the folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "bb03e55f406fc36b750bfd5fa563dd70",
+            "name": "Delete folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "recursive",
+                    "description": "Enable to delete folders, subfolders and files",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "35c02de64df3a44a771831668b548599",
+            "name": "Copy folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/folder\/copy\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "6b35a9b183d320521e90d2e8e48e84d5",
+            "name": "Move folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/folder\/move\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "48e480482bee89c55d6547868f9001fd",
+            "name": "Check if storage exists",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/{storageName}\/exist",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "2e98bb6c6e8b557378232e7336cbb3e3",
+            "name": "Check if file or folder exists",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/exist\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "545920d0e05914d35ec7967d93769247",
+            "name": "Get disc usage",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/disc",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        },
+        {
+            "id": "fabf5e9289a7cfa5c0f9ecd09b13f0e8",
+            "name": "Get file versions",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/html\/storage\/version\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cf61fceb6486a262e656d9f1de1b3e00",
+            "rawModeData": ""
+        }
+    ]
+}
