@@ -1,0 +1,274 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.1",
+        "title": "Aspose.Diagram for Cloud API Reference",
+        "description": "",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.aspose.cloud\/v1.1"
+    ],
+    "paths": {
+        "\/diagram\/{name}\/pages": {
+            "get": {
+                "summary": "Read pages info.",
+                "description": "",
+                "operationId": "DiagramPagesGetPages",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Document folder."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as Pages info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/PagesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/diagram\/{name}": {
+            "get": {
+                "summary": "get document info.",
+                "description": "",
+                "operationId": "DiagramFileGetDiagram",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Document folder."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as Pages info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/PagesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Create new file.",
+                "description": "",
+                "operationId": "DiagramFilePutCreate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Document folder."
+                    },
+                    {
+                        "name": "IsOverwrite",
+                        "in": "query",
+                        "description": "If true overwrite the same name file.The default value is false "
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as Pages info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/PagesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/diagram\/{name}\/upload": {
+            "put": {
+                "summary": "Upload file.",
+                "description": "",
+                "operationId": "DiagramFilePutUpload",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Document folder."
+                    },
+                    {
+                        "name": "IsOverwrite",
+                        "in": "query",
+                        "description": "If true overwrite the same name file.The default value is false "
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as Pages info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/PagesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/diagram\/{name}\/SaveAs": {
+            "post": {
+                "summary": "Save File as another format.like 'png' 'pdf' and more",
+                "description": "",
+                "operationId": "DiagramFilePostSaveAs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Document name."
+                    },
+                    {
+                        "name": "newfilename",
+                        "in": "query",
+                        "description": "The new document"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Document folder."
+                    },
+                    {
+                        "name": "IsOverwrite",
+                        "in": "query",
+                        "description": "If true overwrite the same name file.The default value is false "
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "as Pages info.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/PagesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "SaaSposeResponse": {
+                "type": "object",
+                "properties": {
+                    "Code": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "Status": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Code": {
+                "type": "object"
+            },
+            "FileFormatRequest": {
+                "type": "object",
+                "properties": {
+                    "Format": {
+                        "description": "vst\u3001vtx\u3001\u3001\u3001\u3001\n ",
+                        "type": "string"
+                    }
+                }
+            },
+            "SaveResult": {
+                "type": "object",
+                "properties": {
+                    "SourceDocument": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "DestDocument": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "AdditionalItems": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "SourceDocument": {
+                "type": "object"
+            },
+            "DestDocument": {
+                "type": "object"
+            },
+            "AdditionalItems": {
+                "type": "array"
+            },
+            "Link": {
+                "type": "object",
+                "properties": {
+                    "Href": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Rel": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "PagesResponse": {
+                "type": "object"
+            },
+            "SaveResponse": {
+                "type": "object"
+            }
+        }
+    }
+}
