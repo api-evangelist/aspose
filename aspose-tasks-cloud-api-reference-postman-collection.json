@@ -1,0 +1,4595 @@
+{
+    "id": "f44cfd4fcd8640696899f0862f042bef",
+    "name": "Aspose.Tasks Cloud API Reference",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "9b7344979378f5066320f070c9ad305c",
+            "name": "Get project's assignment items.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/assignments",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "4bcc13b2f34975496571c00dd1887101",
+            "name": "Adds a new assignment to a project and returns assignment item in a response.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/assignments",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskUid",
+                    "description": "The unique id of the task to be assigned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resourceUid",
+                    "description": "The unique id of the resource to be assigned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "The units for the new assignment. Default value is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "39e14038ac13f02eb2365da49353bf32",
+            "name": "Read project assignment with the specified Uid.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/assignments\/{assignmentUid}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "assignmentUid",
+                    "description": "Assignment Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "5bfa264c0bca61c21b45b4c6953ab52b",
+            "name": "Deletes a project assignment with all references to it.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/assignments\/{assignmentUid}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "assignmentUid",
+                    "description": "Assignment Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "1d207e12fe4238282ad54dbc3bd4fa28",
+            "name": "Updates resources assignment with the specified Uid.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/assignments\/{assignmentUid}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "assignmentUid",
+                    "description": "Assignment Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "mode",
+                    "description": "Projects calculation mode",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "recalculate",
+                    "description": "boolean value",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "c4c226e8a9132d87af3ee4c41026a847",
+            "name": "Get timescaled data for an assignment with the specified Uid.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/assignments\/{assignmentUid}\/timeScaleData",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "assignmentUid",
+                    "description": "Assignment Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Type of timephased data to get.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "Start date.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "endDate",
+                    "description": "End date.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "286a00f03007cb3a890695af1c0b8337",
+            "name": "Read project calendar items.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/calendars",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "e0c602a68f7ef995d7bacfe84dcd056d",
+            "name": "Adds a new calendar to project file.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/calendars",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "d951a9027bd08e791a6de39128d327f2",
+            "name": "Edits an existing project calendar.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/calendars",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "calendarUid",
+                    "description": "The Uid of an existing calendar to edit.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "2e0ceab9c03c50a076f6871416bc69cf",
+            "name": "Get a project's calendar with the specified Uid.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/calendars\/{calendarUid}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "calendarUid",
+                    "description": "Calendars Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "b88e6b7db9d943cd5c92695700867094",
+            "name": "Deletes a project calendar",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/calendars\/{calendarUid}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "calendarUid",
+                    "description": "Calendars Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "2f8685089e0ec89a54901a8bcaaddc6a",
+            "name": "Get a list of calendar's exceptions.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/calendars\/{calendarUid}\/calendarExceptions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "calendarUid",
+                    "description": "Calendars Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "c8e2914a5c20bad8a84357948cbd0005",
+            "name": "Adds a new calendar exception to a calendar.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/calendars\/{calendarUid}\/calendarExceptions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "calendarUid",
+                    "description": "Calendars Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "07f6428269e187bdb4dda235bcb589b8",
+            "name": "Updates calendar exception.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/calendars\/{calendarUid}\/calendarExceptions\/{index}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "calendarUid",
+                    "description": "Calendars Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "index",
+                    "description": "Index of the calendar exception. See CalendarException.Index property.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd1b21c070bef1e24a9126c95fce6a9f",
+            "name": "Deletes calendar exception from calendar exceptions collection.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/calendars\/{calendarUid}\/calendarExceptions\/{index}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "calendarUid",
+                    "description": "Calendars Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "index",
+                    "description": "Index of the calendar exception. See CalendarException.Index property.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "523d4d86c2e1b4dabe3dbbf22fd05e24",
+            "name": "Gets the collection of work weeks of the specified calendar.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/calendars\/{calendarUid}\/workWeeks",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "calendarUid",
+                    "description": "Calendars Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "aac93d76014771efffb5f8e52334a632",
+            "name": "Returns the list of the tasks which must be completed on time for a project to finish on schedule. Each task of the project is represented as a task item here, which is light-weighted task representation of the project task..",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/criticalPath",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "9296f0e59c212e4151da04c87aaae1c4",
+            "name": "Get a project document.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "e1a4580af8a9c3756fd0af19c1598764",
+            "name": "Get a project document in the specified format",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/format",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "The format of the resulting file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "returnAsZipArchive",
+                    "description": "If parameter is true, HTML resources are included as separate files and returned along with the resulting html file as a zip package.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "d9734b20481a1f2746760da0d58d99c3",
+            "name": "Get a project document in the specified format and with the specified save options.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/format",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "The format of the resulting file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "returnAsZipArchive",
+                    "description": "If parameter is true, HTML resources are included as separate files and returned along with the resulting html file as a zip package.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "a48df587c1d800cb7676fe72a6d7b588",
+            "name": "Get Uids of projects contained in the file.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/projectids",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "adbdda1f8a99c41679fcb0f1961e923e",
+            "name": "Returns page count for the project to be rendered using given Timescale and PresentationFormat \nor specified PageSize.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/pagecount",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageSize",
+                    "description": "PageSize to get page count for.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "presentationFormat",
+                    "description": "PresentationFormat to get page count for.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timescale",
+                    "description": "Timescale to get page count for.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "Start date.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "endDate",
+                    "description": "End date.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "fdf5841331a654543a7910a8f4c9b801",
+            "name": "Imports project from primavera db formats (Primavera SQLite .db or Primavera xml) and saves it to specified file with the specified format.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/import",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "projectUid",
+                    "description": "Uid of the project to import.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileType",
+                    "description": "The type of file to import. The supported values are (PrimaveraSqliteDb, PrimaveraXml).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outputFileFormat",
+                    "description": "The format of the resulting file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "9f33f1c4959d315efc0d974c8a0b879c",
+            "name": "Imports project from database with the specified connection string and saves it to specified file with the specified format.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/importfromdb",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "databaseType",
+                    "description": "The type of source database. The supported values are (Msp, Mpd, Primavera).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "projectUid",
+                    "description": "Uid of the project to import.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "The format of the resulting file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "databaseSchema",
+                    "description": "Schema of Microsoft project database (if applicable)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "dc9baf67fe28551bc8b30ccaacf55369",
+            "name": "Imports project from Project Online and saves it to specified file.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/importfromprojectonline",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "siteUrl",
+                    "description": "The url of sharepoint site. For example, \"https:\/\/your_company_name.sharepoint.com\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "The format of the resulting file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "cb255afcb5d8657d7b65d3977c9eec01",
+            "name": "Get a collection of a project's document properties.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/documentproperties",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "b4bf93bb4ae6d0be8ebc9ab0916c084f",
+            "name": "Get a document property by name.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/documentproperties\/{propertyName}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "propertyName",
+                    "description": "The property name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "0b224f1d5037b99a41f351886fa15318",
+            "name": "Set\/create document property.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/documentproperties\/{propertyName}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "propertyName",
+                    "description": "The property name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "c4077fe0bf00851d877c6eaabe021b86",
+            "name": "Set\/create document property.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/documentproperties\/{propertyName}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "propertyName",
+                    "description": "The property name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "6e0dc85e23564390883e30420416da49",
+            "name": "Get a project's extended attributes.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/extendedAttributes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "b8f3954c7dfc39636c8c4b0c5435d74b",
+            "name": "Add a new extended attribute definition to a project or \nupdates existing attribute definition (with the same FieldId).",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/extendedAttributes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "843f6cb083b3e5d21572f055f733d666",
+            "name": "Get a project extended attribute definition with the specified index.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/extendedAttributes\/{index}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "index",
+                    "description": "Index of the calendar exception. See CalendarException.Index property.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "52db966c4026050ebbafdd7bbafb8c6b",
+            "name": "Delete a project extended attribute.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/extendedAttributes\/{index}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "index",
+                    "description": "Index of the calendar exception. See CalendarException.Index property.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "5561e03f88dc747d4c9fc11916ce931c",
+            "name": "Get a project's outline codes.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/outlineCodes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "80a239f6c6492abfda8ed0ab78bffc03",
+            "name": "Get outline code by index.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/outlineCodes\/{index}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "index",
+                    "description": "Index of the calendar exception. See CalendarException.Index property.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "ca1b3f0f8276f251b4ff481d761a25fa",
+            "name": "Deletes a project outline code",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/outlineCodes\/{index}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "index",
+                    "description": "Index of the calendar exception. See CalendarException.Index property.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "3f0a43d1d0019ff4c66092a381338983",
+            "name": "Gets the list of published projects in the current Project Online account.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/projectOnline\/projectList",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "siteUrl",
+                    "description": "The url of sharepoint site. For example, \"https:\/\/your_company_name.sharepoint.com\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "51e410bbe9e9cfdb285f8fddc80dcdb0",
+            "name": "Reschedules all project tasks ids, outline levels, start\/finish dates, sets early\/late dates, calculates slacks, work and cost fields.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/recalculate\/project",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "mode",
+                    "description": "Projects calculation mode",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "validate",
+                    "description": "If true the validation of recalculation will be performed. What data is validated:     At the moment only basic validation of task and task link date ranges is implemented.     Tasks date ranges (e.g. ActualStart - ActualFinish, EarlyStart - EarlyFinish, etc.) as well as Task Links dates will be checked against the date criteria that start date is less or equal than finish date.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "1815dd9c1c261e43e6f7c186279a8cea",
+            "name": "Recalculate project work as complete ",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/recalculate\/projectWorkAsComplete",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "setZeroOrHundredPercentCompleteOnly",
+                    "description": "boolean value",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "ddea6c7a1ce9ffa5273b96d9d866dcae",
+            "name": "Recalculate project uncomplete work",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/recalculate\/uncompleteWorkToStartAfter",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "6e59b09b11705ada13840d38ec193407",
+            "name": "Recalculate project resource fields",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/recalculate\/resourceFields",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "4d6534ac2d83fb432a5007d3b7dbed95",
+            "name": "Returns created report in PDF format.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/report",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Type of timephased data to get.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "678fa07bc4a5a1e666013494a3c907c4",
+            "name": "Get a project's resources.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/resources",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "be10dcfdac9ea1bd650d7e4a8b70ef1d",
+            "name": "Add a new resource to a project.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/resources",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resourceName",
+                    "description": "The name of the new resource. The default value is an empty string",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "beforeResourceId",
+                    "description": "The id of the resource to insert the new resource before. The default value is the id of the last resource in a project file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "1b37f6e444bbb5e027df173bd04bfda3",
+            "name": "Get project resource.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/resources\/{resourceUid}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resourceUid",
+                    "description": "Resource Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "ce9834b9ae08cb6af6502c3ef5d7c65d",
+            "name": "Updates resource with the specified Uid",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/resources\/{resourceUid}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resourceUid",
+                    "description": "Resource Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "mode",
+                    "description": "Projects calculation mode",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "recalculate",
+                    "description": "boolean value",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "58a9da5bea353c300f009e4954ca57a3",
+            "name": "Deletes a project resource with all references to it",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/resources\/{resourceUid}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resourceUid",
+                    "description": "Resource Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "72884900bf420f88e9ece6961b80e4bc",
+            "name": "Get resource's assignments.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/resources\/{resourceUid}\/assignments",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resourceUid",
+                    "description": "Resource Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "e5cc72dc03879864159d51abba2ece65",
+            "name": "Get timescaled data for a resource with the specified Uid.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/resources\/{resourceUid}\/timeScaleData",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resourceUid",
+                    "description": "Resource Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Type of timephased data to get.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "Start date.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "endDate",
+                    "description": "End date.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "43c2dd8334559dd097ac9b13b4af1945",
+            "name": "Performs a risk analysys using Monte Carlo simulation and creates a risk analysis report.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/riskAnalysisReport",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskUid",
+                    "description": "The unique id of the task to be assigned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "distributionType",
+                    "description": "Gets or sets the probability distribution used in Monte Carlo simulation. The default value is ProbabilityDistributionType.Normal.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "optimistic",
+                    "description": "The percentage of the most likely task duration which can happen in the best possible project scenario. The default value is 75, which means that if the estimated specified task duration is 4 days then the optimistic duration will be 3 days.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pessimistic",
+                    "description": "The percentage of the most likely task duration which can happen in the worst possible project scenario. The default value is 125, which means that if the estimated specified task duration is 4 days then the pessimistic duration will be 5 days.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "confidenceLevel",
+                    "description": "Gets or sets the confidence level that correspond to the percentage of the time the actual generated values will be within optimistic and pessimistic estimates. The default value is CL99.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "iterations",
+                    "description": "The number of iterations to use in Monte Carlo simulation. The default value is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "1d406ebdbad397769796dc0226ab4574",
+            "name": "Get a project's tasks.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/tasks",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "ab6ffd56d1a96dcb521bd24e8682829b",
+            "name": "Add a new task to a project.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/tasks",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskName",
+                    "description": "The name of the new task. The default value is an empty string",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "beforeTaskId",
+                    "description": "The id of the task to insert the new task before.              The default value is the id of the last task in a project file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "4a09d09e4926ddf2762b21185dfac812",
+            "name": "Read project task.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/tasks\/{taskUid}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskUid",
+                    "description": "Task Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "d620e20fc6a79b6b1ac01fba38825656",
+            "name": "Deletes a project task with all references to it and rebuilds tasks tree.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/tasks\/{taskUid}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskUid",
+                    "description": "Task Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "3492e9adf2a1442598ff968954c12ff2",
+            "name": "Updates special task getting by task UID",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/tasks\/{taskUid}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskUid",
+                    "description": "Task Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "mode",
+                    "description": "Projects calculation mode",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "recalculate",
+                    "description": "boolean value",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "570f0c52ef1f2f12a0f9cbdff0b46115",
+            "name": "Get task assignments.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/tasks\/{taskUid}\/assignments",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskUid",
+                    "description": "Task Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "404264b641d6e9584f56d38993746fc3",
+            "name": "Get timescaled data for a task with the specified Uid.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/tasks\/{taskUid}\/timeScaleData",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskUid",
+                    "description": "Task Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Type of timephased data to get.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "Start date.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "endDate",
+                    "description": "End date.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "987261efe77bed5bae4d5da7ae0e94b5",
+            "name": "Get recurring info for a task with the specified Uid",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/tasks\/{taskUid}\/recurringInfo",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskUid",
+                    "description": "Task Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "477943cd540c7a3c323b96033ed981d2",
+            "name": "Updates existing task's recurring info. Note that task should be already recurring.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/tasks\/{taskUid}\/recurringInfo",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskUid",
+                    "description": "Task Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "c376f0312eb8deff5e13237daf57e355",
+            "name": "Adds a new recurring task.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/tasks\/recurringInfo",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "parentTaskUid",
+                    "description": "The Uid of parent task for the created recurring task",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskName",
+                    "description": "The name of the new task. The default value is an empty string",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "calendarName",
+                    "description": "Name of the projects calendar to use for recurring tasks scheduling.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "89acf1ee7630e702af36e1bd17c71c46",
+            "name": "Move one task to another parent task",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/tasks\/{taskUid}\/move",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskUid",
+                    "description": "Task Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "parentTaskUid",
+                    "description": "The Uid of parent task for the created recurring task",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "be9cc024acd1b8074eeb525bb7f5deee",
+            "name": "Move a task to another position under the same parent and the same outline level",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/tasks\/{taskUid}\/moveToSibling",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskUid",
+                    "description": "Task Uid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "beforeTaskUid",
+                    "description": "Unique Id of the task after which the current task will be placed.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "a1ac727f0e00125d86201a3ba69e5ee7",
+            "name": "Get tasks' links of a project.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/taskLinks",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "2c8c727ddd706582dc5a6584592534f3",
+            "name": "Adds a new task link to a project.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/taskLinks",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "40d5019308ac6b7da551a7016652606c",
+            "name": "Updates existing task link.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/taskLinks\/{index}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "index",
+                    "description": "Index of the calendar exception. See CalendarException.Index property.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "51a27c94e8a94ca2d40e7a4ab8ffa1fd",
+            "name": "Delete task link.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/taskLinks\/{index}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "index",
+                    "description": "Index of the calendar exception. See CalendarException.Index property.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "bcbf7e092f621f6eb9677a13b4212092",
+            "name": "Returns VBA project.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/vbaproject",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "1482066d2951c634f86656f052c7a3c4",
+            "name": "Get a project's WBS Definition.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/wbsDefinition",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "eb36475ec3915ce862e2b70baa282d99",
+            "name": "Renumber WBS code of passed tasks (if specified) or all project's tasks.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/{name}\/renumberWbsCode",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "The document storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "The name of the project document to save changes to. If this parameter is omitted then the changes will be saved to the source project document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "The document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "4c22b6d619831a0b0d00d36a66c84441",
+            "name": "Download file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "8e844650af179ee0e2542fcb1c1eca90",
+            "name": "Upload file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "File",
+                    "description": "File to upload",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "1d75c7c8f4bbc1c48d348b84ae09220a",
+            "name": "Delete file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "b8a5a1a0deda4c78efe782cfc9efff74",
+            "name": "Copy file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/file\/copy\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "af17591d847130d34a20f1accd969e8f",
+            "name": "Move file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/file\/move\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "d5ff57b6117a2e1971b9fcef6d26ecc9",
+            "name": "Get all files and folders within a folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "dec828e004f028bcf20d539cc317e280",
+            "name": "Create the folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "ac6c3ed7b1b6793937dfcb18728c3a26",
+            "name": "Delete folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "recursive",
+                    "description": "Enable to delete folders, subfolders and files",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "735c3c499e4711a436c967028d493a2c",
+            "name": "Copy folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/folder\/copy\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "f7ceda16c1293b0b08e384fa3d2df5c8",
+            "name": "Move folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/folder\/move\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "97ca997b9fa567a10d845822209469a5",
+            "name": "Check if storage exists",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/{storageName}\/exist",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "df92ce00abb335b932f0779ce132f7bf",
+            "name": "Check if file or folder exists",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/exist\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "45aba909526fab0eebf0be67cf3fb85f",
+            "name": "Get disc usage",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/disc",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        },
+        {
+            "id": "0c1c0f83a12b09fb915e7f435c54b509",
+            "name": "Get file versions",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/tasks\/storage\/version\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f44cfd4fcd8640696899f0862f042bef",
+            "rawModeData": ""
+        }
+    ]
+}
