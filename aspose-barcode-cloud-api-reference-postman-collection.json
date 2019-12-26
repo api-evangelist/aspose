@@ -1,0 +1,1189 @@
+{
+    "id": "6a164e54979e638fdb594f9b55bcd133",
+    "name": "Aspose.Barcode Cloud API Reference",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "d5423efc5b8e37aff2f578b90cc1f73f",
+            "name": "Generate barcode.\n            ",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/generate",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "text",
+                    "description": "The code text.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Barcode type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Result format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resolutionX",
+                    "description": "Horizontal resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resolutionY",
+                    "description": "Vertical resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dimensionX",
+                    "description": "Smallest width of barcode unit (bar or space).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dimensionY",
+                    "description": "Smallest height of barcode unit (for 2D barcodes).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "enableChecksum",
+                    "description": "Sets if checksum will be generated.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "1331052bfdce6cdf1bcd7683507be6d7",
+            "name": "Generate barcode and save on server (from query params or from file with json or xml content)\n            ",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/{name}\/generate",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The image name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "text",
+                    "description": "The code text.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Barcode type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Result format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resolutionX",
+                    "description": "Horizontal resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resolutionY",
+                    "description": "Vertical resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dimensionX",
+                    "description": "Smallest width of barcode unit (bar or space).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dimensionY",
+                    "description": "Smallest height of barcode unit (for 2D barcodes).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "codeLocation",
+                    "description": "CodeLocation property of the barcode. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "grUnit",
+                    "description": "Measurement of barcode properties. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "autoSize",
+                    "description": "Sets if barcode size will be updated automatically. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "barHeight",
+                    "description": "Height of the bar. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageHeight",
+                    "description": "Height of the image. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageWidth",
+                    "description": "Width of the image. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageQuality",
+                    "description": "Determines ImageQualityMode of the barcode image. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rotAngle",
+                    "description": "Angle of barcode orientation. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "topMargin",
+                    "description": "Top margin. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bottomMargin",
+                    "description": "Bottom margin. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leftMargin",
+                    "description": "Left margin. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rightMargin",
+                    "description": "Right margin. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "enableChecksum",
+                    "description": "Sets if checksum will be generated.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Images storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Images folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "File",
+                    "description": "File to upload",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "ac4cbdd8eb6f6ca005510e77ea9e02e6",
+            "name": "Recognize barcode from a file on server.\n            ",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/{name}\/recognize",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The image name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Barcode type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checksumValidation",
+                    "description": "Checksum validation parameter.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stripFnc",
+                    "description": "Allows to strip FNC symbol in recognition results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rectX",
+                    "description": "Top left point X coordinate of Rectangle to recognize barcode inside.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rectY",
+                    "description": "Top left point Y coordinate of Rectangle to recognize barcode inside.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rectWidth",
+                    "description": "Width of Rectangle to recognize barcode inside.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rectHeight",
+                    "description": "Height of Rectangle to recognize barcode inside.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Images storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Images folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "7ce2e4f8fa963c5254aee3be5a69e813",
+            "name": "Recognition of a barcode from file on server with parameters in body.\n            ",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/{name}\/recognize",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The image name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Barcode type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Images folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Images storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "0a334b150af954f7535d80194ce235e8",
+            "name": "Recognize barcode from an url or from request body. Request body can contain raw data bytes of the image or encoded\nwith base64.\n            ",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/recognize",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "type",
+                    "description": "Barcode type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checksumValidation",
+                    "description": "Checksum validation parameter.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stripFnc",
+                    "description": "Allows to strip FNC symbol in recognition results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "url",
+                    "description": "The image file url.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "2b7e9977a88db84767aeed7033a48fb2",
+            "name": "Generate multiple barcodes and return in response stream\n            ",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/generateMultiple",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "format",
+                    "description": "Result format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "8c83f07c8758f724d643b0c9879a3c66",
+            "name": "Generate image with multiple barcodes and put new file on server\n            ",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/{name}\/generateMultiple",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The image name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Result format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Images folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Images storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "389cd7987947740e445a036d60018850",
+            "name": "Download file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "2b59ef862f84035a0f5d66d60bf96649",
+            "name": "Upload file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "File",
+                    "description": "File to upload",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "f3edbb26fc358bf414d7c1edd55ce081",
+            "name": "Delete file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "55878b4045b1beed1a6b0ed85dfeeb68",
+            "name": "Copy file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/file\/copy\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "6f8f5568cbb7a9bcd8beed3abe597295",
+            "name": "Move file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/file\/move\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "98ad5917eed26e21bdc724c8a69fb14c",
+            "name": "Get all files and folders within a folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd22da02f95a20ed8c114255ea9a22c1",
+            "name": "Create the folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "c69d769a9a7b0607b531b07701cab816",
+            "name": "Delete folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "recursive",
+                    "description": "Enable to delete folders, subfolders and files",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "70f297721f8957e4c9aa892a27b83c2d",
+            "name": "Copy folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/folder\/copy\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "0695d10c2dfc722719217e3393f74fcd",
+            "name": "Move folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/folder\/move\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "c8f88d2d34001b774b8e31f0472633c3",
+            "name": "Check if storage exists",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/{storageName}\/exist",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "de66320197086521a19e56606df60f53",
+            "name": "Check if file or folder exists",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/exist\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "e4c1862051f755dbc08041ff710b3e15",
+            "name": "Get disc usage",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/disc",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        },
+        {
+            "id": "1cef782b3c26df8666410fb96d47219b",
+            "name": "Get file versions",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/barcode\/storage\/version\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a164e54979e638fdb594f9b55bcd133",
+            "rawModeData": ""
+        }
+    ]
+}
