@@ -1,0 +1,2419 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "3.0",
+        "title": "Aspose.Email Cloud API Reference",
+        "description": "",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.aspose.cloud\/v3.0"
+    ],
+    "paths": {
+        "\/email\/Calendar\/{name}\/properties": {
+            "get": {
+                "summary": "Get calendar file properties",
+                "description": "",
+                "operationId": "GetCalendar",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update calendar file properties",
+                "description": "",
+                "operationId": "UpdateCalendarProperties",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Calendar\/{name}": {
+            "put": {
+                "summary": "Create calendar file",
+                "description": "",
+                "operationId": "CreateCalendar",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Calendar\/{name}\/properties\/{memberName}\/{index}": {
+            "delete": {
+                "summary": "Deletes indexed property by index and name.\nTo delete Reminder attachment, use path ReminderAttachment\/{ReminderIndex}\/{AttachmentIndex}",
+                "description": "",
+                "operationId": "DeleteCalendarProperty",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    },
+                    {
+                        "name": "memberName",
+                        "in": "path",
+                        "description": "Indexed property name"
+                    },
+                    {
+                        "name": "index",
+                        "in": "path",
+                        "description": "Property index path"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Calendar": {
+            "get": {
+                "summary": "Get iCalendar files list in folder on storage",
+                "description": "",
+                "operationId": "GetCalendarList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    },
+                    {
+                        "name": "itemsPerPage",
+                        "in": "query",
+                        "description": "Count of items on page"
+                    },
+                    {
+                        "name": "pageNumber",
+                        "in": "query",
+                        "description": "Page number"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Calendar\/{name}\/attachments\/{attachment}": {
+            "put": {
+                "summary": "Adds an attachment to iCalendar file",
+                "description": "",
+                "operationId": "AddCalendarAttachment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    },
+                    {
+                        "name": "attachment",
+                        "in": "path",
+                        "description": "Attachment file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "Get iCalendar document attachment by name",
+                "description": "",
+                "operationId": "GetCalendarAttachment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    },
+                    {
+                        "name": "attachment",
+                        "in": "path",
+                        "description": "Attachment file name in storage"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Contact\/{format}\/{name}": {
+            "put": {
+                "summary": "Create contact document",
+                "description": "",
+                "operationId": "CreateContact",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "format",
+                        "in": "path",
+                        "description": "Contact document format"
+                    },
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Contact\/{format}\/{name}\/properties": {
+            "get": {
+                "summary": "Get contact document properties",
+                "description": "",
+                "operationId": "GetContactProperties",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "format",
+                        "in": "path",
+                        "description": "Contact document format"
+                    },
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update contact document properties",
+                "description": "",
+                "operationId": "UpdateContactProperties",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "format",
+                        "in": "path",
+                        "description": "Contact document format"
+                    },
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Contact\/{format}\/{name}\/properties\/{memberName}\/{index}": {
+            "delete": {
+                "summary": "Delete property from indexed property list",
+                "description": "",
+                "operationId": "DeleteContactProperty",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "format",
+                        "in": "path",
+                        "description": "Contact document format"
+                    },
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    },
+                    {
+                        "name": "memberName",
+                        "in": "path",
+                        "description": "Indexed property name"
+                    },
+                    {
+                        "name": "index",
+                        "in": "path",
+                        "description": "Property index path"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Contact\/{format}\/{name}\/attachments\/{attachment}": {
+            "get": {
+                "summary": "Get attachment file by name",
+                "description": "",
+                "operationId": "GetContactAttachment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "format",
+                        "in": "path",
+                        "description": "Contact document format"
+                    },
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    },
+                    {
+                        "name": "attachment",
+                        "in": "path",
+                        "description": "Attachment file name in storage"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Add attachment to contact document",
+                "description": "",
+                "operationId": "AddContactAttachment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "format",
+                        "in": "path",
+                        "description": "Contact document format"
+                    },
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    },
+                    {
+                        "name": "attachment",
+                        "in": "path",
+                        "description": "Attachment file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Contact\/{format}": {
+            "get": {
+                "summary": "Get contact list from storage folder",
+                "description": "",
+                "operationId": "GetContactList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "format",
+                        "in": "path",
+                        "description": "Contact document format"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "itemsPerPage",
+                        "in": "query",
+                        "description": "Count of items on page"
+                    },
+                    {
+                        "name": "pageNumber",
+                        "in": "query",
+                        "description": "Page number"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/client\/SaveMailAccount": {
+            "post": {
+                "summary": "Create email account file (*.account) with login\/password authentication",
+                "description": "",
+                "operationId": "SaveMailAccount",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/client\/SaveMailOAuthAccount": {
+            "post": {
+                "summary": "Create email account file (*.account) with OAuth",
+                "description": "",
+                "operationId": "SaveMailOAuthAccount",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/client\/Send": {
+            "post": {
+                "summary": "Send an email from *.eml file located on storage",
+                "description": "",
+                "operationId": "SendEmail",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/client\/SendMime": {
+            "post": {
+                "summary": "Send an email specified by MIME in request",
+                "description": "",
+                "operationId": "SendEmailMime",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/client\/Append": {
+            "put": {
+                "summary": "Adds an email from *.eml file to specified folder in email account",
+                "description": "",
+                "operationId": "AppendEmailMessage",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/client\/AppendMime": {
+            "put": {
+                "summary": "Adds an email from MIME to specified folder in email account",
+                "description": "",
+                "operationId": "AppendMimeMessage",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/client\/CreateFolder": {
+            "put": {
+                "summary": "Create new folder in email account",
+                "description": "",
+                "operationId": "CreateEmailFolder",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/client\/DeleteFolder": {
+            "delete": {
+                "summary": "Delete a folder in email account",
+                "description": "",
+                "operationId": "DeleteEmailFolder",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/client\/DeleteMessage": {
+            "delete": {
+                "summary": "Delete message from email account by id",
+                "description": "",
+                "operationId": "DeleteEmailMessage",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/client\/Fetch": {
+            "get": {
+                "summary": "Fetch message mime from email account",
+                "description": "",
+                "operationId": "FetchEmailMessage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "messageId",
+                        "in": "query",
+                        "description": "Message identifier"
+                    },
+                    {
+                        "name": "firstAccount",
+                        "in": "query",
+                        "description": "Email account"
+                    },
+                    {
+                        "name": "secondAccount",
+                        "in": "query",
+                        "description": "Additional email account (should be specified for POP\/IMAP accounts and should be SMTP account)"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "storageFolder",
+                        "in": "query",
+                        "description": "Folder in storage where account file(s) located"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/client\/ListFolders": {
+            "get": {
+                "summary": "Get folders list in email account",
+                "description": "",
+                "operationId": "ListEmailFolders",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "firstAccount",
+                        "in": "query",
+                        "description": "Email account"
+                    },
+                    {
+                        "name": "secondAccount",
+                        "in": "query",
+                        "description": "Additional email account (should be specified for POP\/IMAP accounts and should be SMTP account)"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "storageFolder",
+                        "in": "query",
+                        "description": "Folder in storage where account file(s) located"
+                    },
+                    {
+                        "name": "parentFolder",
+                        "in": "query",
+                        "description": "Folder in which subfolders should be listed"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/client\/ListMessages": {
+            "get": {
+                "summary": "Get messages from folder, filtered by query",
+                "description": "The query string should have the following view.  The example of a simple expression:     ,  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.  The number of simple expressions can make a compound one, ex.: ( & ) | ,  where \"&amp;\" - logical-AND operator, \"|\" - logical-",
+                "operationId": "ListEmailMessages",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    },
+                    {
+                        "name": "queryString",
+                        "in": "query",
+                        "description": "A MailQuery search string"
+                    },
+                    {
+                        "name": "firstAccount",
+                        "in": "query",
+                        "description": "Email account"
+                    },
+                    {
+                        "name": "secondAccount",
+                        "in": "query",
+                        "description": "Additional email account (should be specified for POP\/IMAP accounts and should be SMTP account)"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "storageFolder",
+                        "in": "query",
+                        "description": "Folder in storage where account file(s) located"
+                    },
+                    {
+                        "name": "recursive",
+                        "in": "query",
+                        "description": "Specifies that should message be searched in subfolders recursively"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/client\/SetReadFlag": {
+            "post": {
+                "summary": "Sets \"Message is read\" flag",
+                "description": "",
+                "operationId": "SetEmailReadFlag",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/{fileName}": {
+            "get": {
+                "summary": "Get email document",
+                "description": "",
+                "operationId": "GetEmail",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fileName",
+                        "in": "path",
+                        "description": "Email document file name in storage"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Create an email document",
+                "description": "",
+                "operationId": "CreateEmail",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fileName",
+                        "in": "path",
+                        "description": "Email document file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/{fileName}\/properties\/{propertyName}": {
+            "get": {
+                "summary": "Get an email document property by its name",
+                "description": "",
+                "operationId": "GetEmailProperty",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "propertyName",
+                        "in": "path",
+                        "description": "A property name"
+                    },
+                    {
+                        "name": "fileName",
+                        "in": "path",
+                        "description": "Email document file name in storage"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Set email document property value",
+                "description": "",
+                "operationId": "SetEmailProperty",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "propertyName",
+                        "in": "path",
+                        "description": "A property name"
+                    },
+                    {
+                        "name": "fileName",
+                        "in": "path",
+                        "description": "Email document file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/{fileName}\/attachments\/{attachment}": {
+            "get": {
+                "summary": "Get email attachment by name",
+                "description": "",
+                "operationId": "GetEmailAttachment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "attachment",
+                        "in": "path",
+                        "description": "Attachment file name in storage"
+                    },
+                    {
+                        "name": "fileName",
+                        "in": "path",
+                        "description": "Email document file name in storage"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/{fileName}\/attachments\/{attachmentName}": {
+            "post": {
+                "summary": "Adds an attachment to Email document",
+                "description": "",
+                "operationId": "AddEmailAttachment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "attachmentName",
+                        "in": "path",
+                        "description": "Attachment file name"
+                    },
+                    {
+                        "name": "fileName",
+                        "in": "path",
+                        "description": "Email document file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Mapi\/{name}\/properties": {
+            "get": {
+                "summary": "Get document properties",
+                "description": "",
+                "operationId": "GetMapiProperties",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update document properties",
+                "description": "",
+                "operationId": "UpdateMapiProperties",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete document properties",
+                "description": "",
+                "operationId": "DeleteMapiProperties",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Mapi\/{name}": {
+            "put": {
+                "summary": "Create new document",
+                "description": "",
+                "operationId": "CreateMapi",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Mapi": {
+            "get": {
+                "summary": "Get document list from storage folder",
+                "description": "",
+                "operationId": "GetMapiList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "itemsPerPage",
+                        "in": "query",
+                        "description": "Count of items on page"
+                    },
+                    {
+                        "name": "pageNumber",
+                        "in": "query",
+                        "description": "Page number"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Mapi\/{name}\/attachments": {
+            "get": {
+                "summary": "Get document attachment list",
+                "description": "",
+                "operationId": "GetMapiAttachments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/Mapi\/{name}\/attachments\/{attachment}": {
+            "get": {
+                "summary": "Get document attachment as file stream",
+                "description": "",
+                "operationId": "GetMapiAttachment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    },
+                    {
+                        "name": "attachment",
+                        "in": "path",
+                        "description": "Attachment file name in storage"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Path to folder in storage"
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Add attachment to document",
+                "description": "",
+                "operationId": "AddMapiAttachment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    },
+                    {
+                        "name": "attachment",
+                        "in": "path",
+                        "description": "Attachment file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Remove attachment from document",
+                "description": "",
+                "operationId": "DeleteMapiAttachment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "iCalendar file name in storage"
+                    },
+                    {
+                        "name": "attachment",
+                        "in": "path",
+                        "description": "Attachment file name in storage"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/storage\/file\/{path}": {
+            "get": {
+                "summary": "Download file",
+                "description": "",
+                "operationId": "DownloadFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Upload file",
+                "description": "",
+                "operationId": "UploadFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "File",
+                        "in": "formData",
+                        "description": "File to upload"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete file",
+                "description": "",
+                "operationId": "DeleteFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/storage\/file\/copy\/{srcPath}": {
+            "put": {
+                "summary": "Copy file",
+                "description": "",
+                "operationId": "CopyFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/storage\/file\/move\/{srcPath}": {
+            "put": {
+                "summary": "Move file",
+                "description": "",
+                "operationId": "MoveFile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/storage\/folder\/{path}": {
+            "get": {
+                "summary": "Get all files and folders within a folder",
+                "description": "",
+                "operationId": "GetFilesList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Create the folder",
+                "description": "",
+                "operationId": "CreateFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete folder",
+                "description": "",
+                "operationId": "DeleteFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "recursive",
+                        "in": "query",
+                        "description": "Specifies that should message be searched in subfolders recursively"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/storage\/folder\/copy\/{srcPath}": {
+            "put": {
+                "summary": "Copy folder",
+                "description": "",
+                "operationId": "CopyFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/storage\/folder\/move\/{srcPath}": {
+            "put": {
+                "summary": "Move folder",
+                "description": "",
+                "operationId": "MoveFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "srcPath",
+                        "in": "path",
+                        "description": "Source file path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "destPath",
+                        "in": "query",
+                        "description": "Destination file path"
+                    },
+                    {
+                        "name": "srcStorageName",
+                        "in": "query",
+                        "description": "Source storage name"
+                    },
+                    {
+                        "name": "destStorageName",
+                        "in": "query",
+                        "description": "Destination storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/storage\/{storageName}\/exist": {
+            "get": {
+                "summary": "Check if storage exists",
+                "description": "",
+                "operationId": "StorageExists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "storageName",
+                        "in": "path",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/storage\/exist\/{path}": {
+            "get": {
+                "summary": "Check if file or folder exists",
+                "description": "",
+                "operationId": "ObjectExists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "query",
+                        "description": "File version ID to download"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/storage\/disc": {
+            "get": {
+                "summary": "Get disc usage",
+                "description": "",
+                "operationId": "GetDiscUsage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/email\/storage\/version\/{path}": {
+            "get": {
+                "summary": "Get file versions",
+                "description": "",
+                "operationId": "GetFileVersions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "description": "File path e.g. \/folder\/file.ext"
+                    },
+                    {
+                        "name": "storageName",
+                        "in": "query",
+                        "description": "Storage name"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "iCalendar file properties",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HierarchicalObject"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "HierarchicalObject": {
+                "type": "object"
+            },
+            "BaseObject": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Gets or sets the name of an object.",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "Property type. Used for deserialization purposes",
+                        "type": "string"
+                    }
+                }
+            },
+            "IndexedHierarchicalObject": {
+                "type": "object"
+            },
+            "IndexedPrimitiveObject": {
+                "type": "object"
+            },
+            "PrimitiveObject": {
+                "type": "object"
+            },
+            "HierarchicalObjectRequest": {
+                "type": "object",
+                "properties": {
+                    "HierarchicalObject": {
+                        "description": "Objects' properties hierarchical representation",
+                        "type": "object"
+                    },
+                    "hierarchicalObject": {
+                        "description": "Hierarchical properties of document",
+                        "type": ""
+                    },
+                    "storageFolder": {
+                        "description": "Document location in storage",
+                        "type": ""
+                    }
+                }
+            },
+            "storageFolder": {
+                "type": "object"
+            },
+            "StorageFolderLocation": {
+                "type": "object",
+                "properties": {
+                    "storage": {
+                        "description": "A storage name",
+                        "type": "string"
+                    },
+                    "folderPath": {
+                        "description": "A path to a folder in specified storage",
+                        "type": "string"
+                    }
+                }
+            },
+            "ListResponseOfHierarchicalObjectResponse": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "value": {
+                "type": "array"
+            },
+            "HierarchicalObjectResponse": {
+                "type": "object",
+                "properties": {
+                    "HierarchicalObject": {
+                        "description": "Objects' properties hierarchical representation",
+                        "type": "object"
+                    },
+                    "hierarchicalObject": {
+                        "description": "Hierarchical properties of document",
+                        "type": ""
+                    },
+                    "storageFile": {
+                        "description": "Document location in storage",
+                        "type": ""
+                    }
+                }
+            },
+            "storageFile": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Gets or sets the name of an object.",
+                        "type": "string"
+                    },
+                    "isFolder": {
+                        "description": "True if it is a folder.",
+                        "type": "boolean"
+                    },
+                    "modifiedDate": {
+                        "description": "File or folder last modified DateTime.",
+                        "type": "string"
+                    },
+                    "size": {
+                        "description": "File or folder size.",
+                        "type": "integer"
+                    },
+                    "path": {
+                        "description": "File or folder path.",
+                        "type": "string"
+                    }
+                }
+            },
+            "StorageFileLocation": {
+                "type": "object"
+            },
+            "AddAttachmentRequest": {
+                "type": "object",
+                "properties": {
+                    "StorageFolderLocation": {
+                        "description": "A storage folder location information",
+                        "type": "object"
+                    },
+                    "documentFolder": {
+                        "description": "Storage folder location of document",
+                        "type": ""
+                    },
+                    "attachmentFolder": {
+                        "description": "Storage folder location of an attachment",
+                        "type": ""
+                    }
+                }
+            },
+            "SaveEmailAccountRequest": {
+                "type": "object"
+            },
+            "EmailAccountRequest": {
+                "type": "object",
+                "properties": {
+                    "host": {
+                        "description": "Email account host",
+                        "type": "string"
+                    },
+                    "port": {
+                        "description": "Email account port",
+                        "type": "integer"
+                    },
+                    "login": {
+                        "description": "Email account login",
+                        "type": "string"
+                    },
+                    "securityOptions": {
+                        "description": "Email account security options",
+                        "type": ""
+                    },
+                    "protocolType": {
+                        "description": "Email account protocol type",
+                        "type": ""
+                    },
+                    "description": {
+                        "description": "Email account description",
+                        "type": "string"
+                    },
+                    "StorageFileLocation": {
+                        "description": "A storage file location information",
+                        "type": "object"
+                    },
+                    "storageFile": {
+                        "description": "Document location in storage",
+                        "type": ""
+                    }
+                }
+            },
+            "SaveOAuthEmailAccountRequest": {
+                "type": "object"
+            },
+            "SendEmailBaseRequest": {
+                "type": "object"
+            },
+            "AccountBaseRequest": {
+                "type": "object",
+                "properties": {
+                    "firstAccount": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "secondAccount": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "StorageFolderLocation": {
+                        "description": "A storage folder location information",
+                        "type": "object"
+                    },
+                    "storageFolder": {
+                        "description": "Document location in storage",
+                        "type": ""
+                    }
+                }
+            },
+            "SendEmailMimeBaseRequest": {
+                "type": "object"
+            },
+            "EmailPropertyResponse": {
+                "type": "object",
+                "properties": {
+                    "emailProperty": {
+                        "description": "Gets or sets email property.",
+                        "type": ""
+                    }
+                }
+            },
+            "emailProperty": {
+                "type": "object",
+                "properties": {
+                    "link": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "Gets or sets the name of an object.",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "link": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "The \"href\" attribute contains the link's IRI. atom:link elements MUST\nhave an href attribute, whose value MUST be a IRI reference",
+                        "type": "string"
+                    },
+                    "rel": {
+                        "description": "atom:link elements MAY have a \"rel\" attribute that indicates the link\nrelation type.  If the \"rel\" attribute is not present, the link\nelement MUST be interpreted as if the link relation type is \"alternate\".",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "Property type. Used for deserialization purposes",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "The \"title\" attribute conveys human-readable information about the\nlink.  The content of the \"title\" attribute is Language-Sensitive.",
+                        "type": "string"
+                    }
+                }
+            },
+            "AppendEmailBaseRequest": {
+                "type": "object"
+            },
+            "AppendEmailAccountBaseRequest": {
+                "type": "object"
+            },
+            "ValueResponse": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "Gets or sets string content.",
+                        "type": "string"
+                    }
+                }
+            },
+            "AppendEmailMimeBaseRequest": {
+                "type": "object"
+            },
+            "CreateFolderBaseRequest": {
+                "type": "object"
+            },
+            "DeleteFolderBaseRequest": {
+                "type": "object"
+            },
+            "DeleteMessageBaseRequest": {
+                "type": "object"
+            },
+            "MimeResponse": {
+                "type": "object",
+                "properties": {
+                    "mime": {
+                        "description": "Gets or sets base64 encoded mime content.",
+                        "type": "string"
+                    }
+                }
+            },
+            "ListResponseOfMailServerFolder": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "MailServerFolder": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Gets or sets the name of an object.",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Gets or sets mail folder id",
+                        "type": "string"
+                    }
+                }
+            },
+            "ListResponseOfString": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "SetMessageReadFlagAccountBaseRequest": {
+                "type": "object"
+            },
+            "EmailDocument": {
+                "type": "object",
+                "properties": {
+                    "links": {
+                        "description": "Links that originate from this document.",
+                        "type": "array"
+                    },
+                    "documentProperties": {
+                        "description": "List of document properties.",
+                        "type": ""
+                    }
+                }
+            },
+            "links": {
+                "type": "array"
+            },
+            "documentProperties": {
+                "type": "object"
+            },
+            "EmailProperties": {
+                "type": "object",
+                "properties": {
+                    "link": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "list": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "list": {
+                "type": "array"
+            },
+            "EmailDocumentResponse": {
+                "type": "object",
+                "properties": {
+                    "EmailDocument": {
+                        "description": "Represents Email document DTO.",
+                        "type": "object"
+                    },
+                    "document": {
+                        "description": "An email document requested",
+                        "type": ""
+                    }
+                }
+            },
+            "CreateEmailRequest": {
+                "type": "object",
+                "properties": {
+                    "EmailDocument": {
+                        "description": "Represents Email document DTO.",
+                        "type": "object"
+                    },
+                    "emailDocument": {
+                        "description": "An email document that should be created",
+                        "type": ""
+                    },
+                    "StorageFolderLocation": {
+                        "description": "A storage folder location information",
+                        "type": "object"
+                    },
+                    "storageFolder": {
+                        "description": "Document location in storage",
+                        "type": ""
+                    }
+                }
+            },
+            "SetEmailPropertyRequest": {
+                "type": "object",
+                "properties": {
+                    "emailProperty": {
+                        "description": "Gets or sets email property.",
+                        "type": ""
+                    },
+                    "StorageFolderLocation": {
+                        "description": "A storage folder location information",
+                        "type": "object"
+                    },
+                    "storageFolder": {
+                        "description": "Document location in storage",
+                        "type": ""
+                    }
+                }
+            },
+            "FilesUploadResult": {
+                "type": "object",
+                "properties": {
+                    "uploaded": {
+                        "description": "List of uploaded file names",
+                        "type": "array"
+                    },
+                    "errors": {
+                        "description": "List of errors.",
+                        "type": "array"
+                    }
+                }
+            },
+            "uploaded": {
+                "type": "array"
+            },
+            "errors": {
+                "type": "array"
+            },
+            "Error": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "Code\n            ",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "Message\n            ",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "Email account description",
+                        "type": "string"
+                    },
+                    "innerError": {
+                        "description": "Inner Error\n            ",
+                        "type": ""
+                    }
+                }
+            },
+            "innerError": {
+                "type": "object"
+            },
+            "ErrorDetails": {
+                "type": "object",
+                "properties": {
+                    "requestId": {
+                        "description": "The request id",
+                        "type": "string"
+                    },
+                    "date": {
+                        "description": "Date",
+                        "type": "string"
+                    }
+                }
+            },
+            "FilesList": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "StorageExist": {
+                "type": "object",
+                "properties": {
+                    "exists": {
+                        "description": "Shows that the storage exists.\n            ",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "ObjectExist": {
+                "type": "object",
+                "properties": {
+                    "exists": {
+                        "description": "Shows that the storage exists.\n            ",
+                        "type": "boolean"
+                    },
+                    "isFolder": {
+                        "description": "True if it is a folder.",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "DiscUsage": {
+                "type": "object",
+                "properties": {
+                    "usedSize": {
+                        "description": "Application used disc space.",
+                        "type": "integer"
+                    },
+                    "totalSize": {
+                        "description": "Total disc space.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "FileVersions": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "FileVersion": {
+                "type": "object"
+            }
+        }
+    }
+}
