@@ -1,0 +1,373 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "17.11.0",
+        "title": "Aspose.CAD for Cloud API Reference",
+        "description": "",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.aspose.cloud\/v1.1"
+    ],
+    "paths": {
+        "\/cad\/{name}\/saveAs": {
+            "get": {
+                "summary": "Export existing drawing to another format",
+                "description": "",
+                "operationId": "GetImageSaveAs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Filename of drawing."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Output file format. Valid Formats: BMP, PNG, JPG, JPEG, JPEG2000, TIF, TIFF, PSD, GIF, PDF, WMF."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Original drawing folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which has to be used."
+                    },
+                    {
+                        "name": "rasterOptions",
+                        "in": "query",
+                        "description": "The raster options as Base64 string."
+                    },
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Path to updated file, if this is empty, response contains streamed image."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "with updated image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ImagePropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/cad\/saveAs": {
+            "post": {
+                "summary": "Export existing image to another format. Image is passed as request body.",
+                "description": "",
+                "operationId": "PostImageSaveAs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "drawingData",
+                        "in": "formData",
+                        "description": "Input drawing"
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Output file format. Valid Formats: BMP, PNG, JPG, JPEG, JPEG2000, TIF, TIFF, PSD, GIF, PDF, WMF."
+                    },
+                    {
+                        "name": "rasterOptions",
+                        "in": "query",
+                        "description": "The raster options as Base64 string."
+                    },
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Path to updated file, if this is empty, response contains streamed image."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which has to be used."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "with updated image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ImagePropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/cad\/{name}\/properties": {
+            "get": {
+                "summary": "Get properties of an image.",
+                "description": "",
+                "operationId": "GetImageProperties",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Filename of drawing."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Original drawing folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which has to be used."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "with updated image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ImagePropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/cad\/{name}\/resize": {
+            "get": {
+                "summary": "Change scale of an existing image",
+                "description": "",
+                "operationId": "GetChangeImageScale",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Filename of drawing."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Output file format. Valid Formats: BMP, PNG, JPG, JPEG, JPEG2000, TIF, TIFF, PSD, GIF, PDF, WMF."
+                    },
+                    {
+                        "name": "newWidth",
+                        "in": "query",
+                        "description": "New width of the scaled image."
+                    },
+                    {
+                        "name": "newHeight",
+                        "in": "query",
+                        "description": "New height of the scaled image."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Original drawing folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which has to be used."
+                    },
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Path to updated file, if this is empty, response contains streamed image."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "with updated image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ImagePropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/cad\/resize": {
+            "post": {
+                "summary": "Change scale of an image from body",
+                "description": "",
+                "operationId": "PostChangeImageScale",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "drawingData",
+                        "in": "formData",
+                        "description": "Input drawing"
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Output file format. Valid Formats: BMP, PNG, JPG, JPEG, JPEG2000, TIF, TIFF, PSD, GIF, PDF, WMF."
+                    },
+                    {
+                        "name": "newWidth",
+                        "in": "query",
+                        "description": "New width of the scaled image."
+                    },
+                    {
+                        "name": "newHeight",
+                        "in": "query",
+                        "description": "New height of the scaled image."
+                    },
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Path to updated file, if this is empty, response contains streamed image."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which has to be used."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "with updated image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ImagePropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/cad\/{name}\/rotateflip": {
+            "get": {
+                "summary": "Rotate and flip existing image",
+                "description": "",
+                "operationId": "GetImageRotateFlip",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Filename of drawing."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Output file format. Valid Formats: BMP, PNG, JPG, JPEG, JPEG2000, TIF, TIFF, PSD, GIF, PDF, WMF."
+                    },
+                    {
+                        "name": "method",
+                        "in": "query",
+                        "description": "Rotate and flip method. Valid methods: Rotate180FlipNone,  Rotate180FlipX, Rotate180FlipXY, Rotate180FlipY, Rotate270FlipNone, Rotate270FlipX, Rotate270FlipXY, Rotate270FlipY, Rotate90FlipNone, Rotate90FlipX, Rotate90FlipXY, Rotate90FlipY, RotateNoneFlipNone, RotateNoneFlipX, RotateNoneFlipXY, RotateNoneFlipY."
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Original drawing folder."
+                    },
+                    {
+                        "name": "storage",
+                        "in": "query",
+                        "description": "File storage, which has to be used."
+                    },
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Path to updated file, if this is empty, response contains streamed image."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "with updated image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ImagePropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/cad\/rotateflip": {
+            "post": {
+                "summary": "Rotate and flip existing image and get it from response.",
+                "description": "",
+                "operationId": "PostImageRotateFlip",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "drawingData",
+                        "in": "formData",
+                        "description": "Input drawing"
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Output file format. Valid Formats: BMP, PNG, JPG, JPEG, JPEG2000, TIF, TIFF, PSD, GIF, PDF, WMF."
+                    },
+                    {
+                        "name": "method",
+                        "in": "query",
+                        "description": "Rotate and flip method. Valid methods: Rotate180FlipNone,  Rotate180FlipX, Rotate180FlipXY, Rotate180FlipY, Rotate270FlipNone, Rotate270FlipX, Rotate270FlipXY, Rotate270FlipY, Rotate90FlipNone, Rotate90FlipX, Rotate90FlipXY, Rotate90FlipY, RotateNoneFlipNone, RotateNoneFlipX, RotateNoneFlipXY, RotateNoneFlipY."
+                    },
+                    {
+                        "name": "outPath",
+                        "in": "query",
+                        "description": "Path to updated file, if this is empty, response contains streamed image."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "with updated image.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ImagePropertiesResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "SaaSposeResponse": {
+                "type": "object",
+                "properties": {
+                    "Code": {
+                        "description": "Gets or sets the response status code.",
+                        "type": ""
+                    },
+                    "Status": {
+                        "description": "Gets or sets response status.",
+                        "type": "string"
+                    }
+                }
+            },
+            "ImagePropertiesResponse": {
+                "type": "object"
+            }
+        }
+    }
+}
