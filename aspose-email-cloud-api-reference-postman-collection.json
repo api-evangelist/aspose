@@ -1,0 +1,2313 @@
+{
+    "id": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+    "name": "Aspose.Email Cloud API Reference",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "b781a8b7f5adb84b97523f333a024d89",
+            "name": "Get calendar file properties",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Calendar\/{name}\/properties",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "2d84523e462b42baa6846f595e98dba0",
+            "name": "Update calendar file properties",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Calendar\/{name}\/properties",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "f6a1bda976f81dc43160afbcaba5e990",
+            "name": "Create calendar file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Calendar\/{name}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "61239c98d3c3ced5b59518c11862b5d3",
+            "name": "Deletes indexed property by index and name.\nTo delete Reminder attachment, use path ReminderAttachment\/{ReminderIndex}\/{AttachmentIndex}",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Calendar\/{name}\/properties\/{memberName}\/{index}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "memberName",
+                    "description": "Indexed property name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "index",
+                    "description": "Property index path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "ddcd25fa40de29add751005633203b03",
+            "name": "Get iCalendar files list in folder on storage",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Calendar",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemsPerPage",
+                    "description": "Count of items on page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageNumber",
+                    "description": "Page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "acc74b58a87ed1a49aee91107f87b0cb",
+            "name": "Adds an attachment to iCalendar file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Calendar\/{name}\/attachments\/{attachment}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "attachment",
+                    "description": "Attachment file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "91c5b40b2fc58860cec1ab8d78d6c483",
+            "name": "Get iCalendar document attachment by name",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Calendar\/{name}\/attachments\/{attachment}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "attachment",
+                    "description": "Attachment file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "049864fd93c2a2793e6e577eca8dc887",
+            "name": "Create contact document",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Contact\/{format}\/{name}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "format",
+                    "description": "Contact document format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "e7cc0bedf1f779b36f4ce070c4206544",
+            "name": "Get contact document properties",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Contact\/{format}\/{name}\/properties",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "format",
+                    "description": "Contact document format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "11c986f55d5a0a59271b34aced04f47b",
+            "name": "Update contact document properties",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Contact\/{format}\/{name}\/properties",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "format",
+                    "description": "Contact document format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "db8ed1357088eff376e4ec48b3f94dcc",
+            "name": "Delete property from indexed property list",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Contact\/{format}\/{name}\/properties\/{memberName}\/{index}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "format",
+                    "description": "Contact document format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "memberName",
+                    "description": "Indexed property name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "index",
+                    "description": "Property index path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "cc3e84e5cc67d84b914444e2fd9d6c95",
+            "name": "Get attachment file by name",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Contact\/{format}\/{name}\/attachments\/{attachment}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "format",
+                    "description": "Contact document format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "attachment",
+                    "description": "Attachment file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "664d6ce9b898a26a4b1352a0712c6237",
+            "name": "Add attachment to contact document",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Contact\/{format}\/{name}\/attachments\/{attachment}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "format",
+                    "description": "Contact document format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "attachment",
+                    "description": "Attachment file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "fb84c98ba03f76dddf2f29b87c85ab0b",
+            "name": "Get contact list from storage folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Contact\/{format}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "format",
+                    "description": "Contact document format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemsPerPage",
+                    "description": "Count of items on page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageNumber",
+                    "description": "Page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "727c4798d7e5d17ceb66d01ebb4cb5b1",
+            "name": "Create email account file (*.account) with login\/password authentication",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/client\/SaveMailAccount",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "82c585aea0bc432879dc1e8233f4debe",
+            "name": "Create email account file (*.account) with OAuth",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/client\/SaveMailOAuthAccount",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "abc4b30644c63bce2a8e7f04872365d7",
+            "name": "Send an email from *.eml file located on storage",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/client\/Send",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "b19f76f89c7a5a1d9600328a32bb8f4b",
+            "name": "Send an email specified by MIME in request",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/client\/SendMime",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "7eec11a870a3da70f3d3c1690340a1b3",
+            "name": "Adds an email from *.eml file to specified folder in email account",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/client\/Append",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "c5518f0c4802de724f40b0d1197f46b4",
+            "name": "Adds an email from MIME to specified folder in email account",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/client\/AppendMime",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "b59d407f82cbb001b3dc209a85180c9b",
+            "name": "Create new folder in email account",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/client\/CreateFolder",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "ff489249842fb1d2339097aaa113b56b",
+            "name": "Delete a folder in email account",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/client\/DeleteFolder",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "da8d1a8ba61c8c4b4a1660d189ca52a4",
+            "name": "Delete message from email account by id",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/client\/DeleteMessage",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "c7c7dfa15e883bb90e4191a80a844765",
+            "name": "Fetch message mime from email account",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/client\/Fetch",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "messageId",
+                    "description": "Message identifier",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "firstAccount",
+                    "description": "Email account",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "secondAccount",
+                    "description": "Additional email account (should be specified for POP\/IMAP accounts and should be SMTP account)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageFolder",
+                    "description": "Folder in storage where account file(s) located",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "8fb6596f5d81208f177234b8b12db7a6",
+            "name": "Get folders list in email account",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/client\/ListFolders",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "firstAccount",
+                    "description": "Email account",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "secondAccount",
+                    "description": "Additional email account (should be specified for POP\/IMAP accounts and should be SMTP account)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageFolder",
+                    "description": "Folder in storage where account file(s) located",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "parentFolder",
+                    "description": "Folder in which subfolders should be listed",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "36d8adb4c343bcc10235bc8c12478adb",
+            "name": "Get messages from folder, filtered by query",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/client\/ListMessages",
+            "description": "The query string should have the following view.  The example of a simple expression:     ,  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.  The number of simple expressions can make a compound one, ex.: ( & ) | ,  where \"&amp;\" - logical-AND operator, \"|\" - logical-",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "queryString",
+                    "description": "A MailQuery search string",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "firstAccount",
+                    "description": "Email account",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "secondAccount",
+                    "description": "Additional email account (should be specified for POP\/IMAP accounts and should be SMTP account)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageFolder",
+                    "description": "Folder in storage where account file(s) located",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "recursive",
+                    "description": "Specifies that should message be searched in subfolders recursively",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "e8e205119ba4276dc69da151d4d3e6af",
+            "name": "Sets \"Message is read\" flag",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/client\/SetReadFlag",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "96b841b65756aae54b413c4f4518a190",
+            "name": "Get email document",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/{fileName}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fileName",
+                    "description": "Email document file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "77c69ca8c335caddfc337c09c75e7069",
+            "name": "Create an email document",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/{fileName}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fileName",
+                    "description": "Email document file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "8236e04c8493126d5f107d8251523073",
+            "name": "Get an email document property by its name",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/{fileName}\/properties\/{propertyName}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "propertyName",
+                    "description": "A property name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "Email document file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "9ca410ee8ed4a6796d25f637fc41fb41",
+            "name": "Set email document property value",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/{fileName}\/properties\/{propertyName}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "propertyName",
+                    "description": "A property name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "Email document file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "97398f371a373a694b2e58538da3887c",
+            "name": "Get email attachment by name",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/{fileName}\/attachments\/{attachment}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "attachment",
+                    "description": "Attachment file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "Email document file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "8b6d5c6f7bdfde0f8d6be7fad2d81e7c",
+            "name": "Adds an attachment to Email document",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/{fileName}\/attachments\/{attachmentName}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "attachmentName",
+                    "description": "Attachment file name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "Email document file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "c1c29b4ea78330b3fce8033eba6087bc",
+            "name": "Get document properties",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Mapi\/{name}\/properties",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "3e785d8c0ac73d16d16e5114875f1402",
+            "name": "Update document properties",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Mapi\/{name}\/properties",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "457be6c773747e91bd728340049406c2",
+            "name": "Delete document properties",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Mapi\/{name}\/properties",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "b7b06d55092f7b7ab696124d65cf290a",
+            "name": "Create new document",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Mapi\/{name}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "1b1ec020349f50eeaefa133a9484a012",
+            "name": "Get document list from storage folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Mapi",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemsPerPage",
+                    "description": "Count of items on page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageNumber",
+                    "description": "Page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "18729eb4b5a739092c53fc1568555a2e",
+            "name": "Get document attachment list",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Mapi\/{name}\/attachments",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "67a67681a6ee1ccdea8df4dfa91d803a",
+            "name": "Get document attachment as file stream",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Mapi\/{name}\/attachments\/{attachment}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "attachment",
+                    "description": "Attachment file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Path to folder in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "f95e4ea70a3c9a3fd6efa8a0b33a9a45",
+            "name": "Add attachment to document",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Mapi\/{name}\/attachments\/{attachment}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "attachment",
+                    "description": "Attachment file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "263fd01e63ceb4975277e338908b9124",
+            "name": "Remove attachment from document",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/Mapi\/{name}\/attachments\/{attachment}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "iCalendar file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "attachment",
+                    "description": "Attachment file name in storage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "ad71a47379eac8b0bbb95f594d623a41",
+            "name": "Download file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "46f05c1881f439a8c6d141e5e1d75256",
+            "name": "Upload file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "File",
+                    "description": "File to upload",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "afb140523281d4426460f222e34c7321",
+            "name": "Delete file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "c2bf8fadcb9fa1463452c9f973202e3e",
+            "name": "Copy file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/file\/copy\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "1e74902caa7df4741016523af86f0250",
+            "name": "Move file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/file\/move\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "f4dc3545348c5c21d61cb37dfd5710a5",
+            "name": "Get all files and folders within a folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "9a3abb76ac98bb99c0e346df00a9ff88",
+            "name": "Create the folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "51e56deec1ddf59c33877b50d8476f52",
+            "name": "Delete folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "recursive",
+                    "description": "Specifies that should message be searched in subfolders recursively",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "71e794ece37ea0b846a99567eb1e2c64",
+            "name": "Copy folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/folder\/copy\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "aacc6a5fa8ff85e31fa92b82318e9a94",
+            "name": "Move folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/folder\/move\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "3626a67fcb9a0099ab8b13a5082fd6ac",
+            "name": "Check if storage exists",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/{storageName}\/exist",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "bc1c5a81ebe9c6ef780e9c0f47d22714",
+            "name": "Check if file or folder exists",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/exist\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "4348185ed54ff38faceb6b2ac0916b4e",
+            "name": "Get disc usage",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/disc",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        },
+        {
+            "id": "7baa0723e69b918d0c46f79cd669506e",
+            "name": "Get file versions",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/email\/storage\/version\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e67d84427b5c7e2b08c1e9f6a9c2c817",
+            "rawModeData": ""
+        }
+    ]
+}
