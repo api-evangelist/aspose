@@ -1,0 +1,575 @@
+{
+    "id": "cddf74a723cf19e1833a58d0b6660d40",
+    "name": "Aspose.Video for Cloud API References",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "07bf00f7bec85ce5419057724a310170",
+            "name": "Read video properties info.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/video\/{name}\/videoProperties",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The videos name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Original video folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "File storage, which have to be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cddf74a723cf19e1833a58d0b6660d40",
+            "rawModeData": ""
+        },
+        {
+            "id": "d03898500431aa3ab00df3d7d56017d2",
+            "name": "Read video property info by the property name.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/video\/{name}\/videoProperties\/{propertyName}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The videos name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "propertyName",
+                    "description": "The property name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Original video folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "File storage, which have to be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cddf74a723cf19e1833a58d0b6660d40",
+            "rawModeData": ""
+        },
+        {
+            "id": "7327fd6735608827727cfd7da5ebdc4d",
+            "name": "Add audio to original video.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/video\/{name}\/addAudio",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The videos name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destinationPath",
+                    "description": "Path where to save the result file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Original video folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "File storage, which have to be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destFileName",
+                    "description": "Result name of the document after the operation. If this parameter is omitted then result of the operation will be saved as the source document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cddf74a723cf19e1833a58d0b6660d40",
+            "rawModeData": ""
+        },
+        {
+            "id": "4d4170a01fb070e99de60490d2eab16a",
+            "name": "Append video to original video.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/video\/{name}\/appendVideo",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The videos name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destinationPath",
+                    "description": "Path where to save the result file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Original video folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "File storage, which have to be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destFileName",
+                    "description": "Result name of the document after the operation. If this parameter is omitted then result of the operation will be saved as the source document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cddf74a723cf19e1833a58d0b6660d40",
+            "rawModeData": ""
+        },
+        {
+            "id": "7fe596ad9461c05ec3a7be471e95caf3",
+            "name": "Export the document into the specified format.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/video\/{name}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The videos name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "The destination format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Original video folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "File storage, which have to be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resultPath",
+                    "description": "Path to save result",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cddf74a723cf19e1833a58d0b6660d40",
+            "rawModeData": ""
+        },
+        {
+            "id": "b89339068c218cc7edc2bd9607384411",
+            "name": "Convert document from request content to format specified.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/video\/{name}\/convert",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The videos name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "The destination format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resultPath",
+                    "description": "Path to save result",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Original video folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "File storage, which have to be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destFileName",
+                    "description": "Result name of the document after the operation. If this parameter is omitted then result of the operation will be saved as the source document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cddf74a723cf19e1833a58d0b6660d40",
+            "rawModeData": ""
+        },
+        {
+            "id": "3d08a92a31d16b2ea1c84fd8af1e5845",
+            "name": "Create a thumbnail image.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/video\/{name}\/extractThumbnail",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The videos name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destinationPath",
+                    "description": "Path where to save the result file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Determines from which time position the frame for the thumbnail should be taken.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Original video folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "File storage, which have to be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destFileName",
+                    "description": "Result name of the document after the operation. If this parameter is omitted then result of the operation will be saved as the source document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cddf74a723cf19e1833a58d0b6660d40",
+            "rawModeData": ""
+        },
+        {
+            "id": "fdc5f2e8ae88d4f739f6567344a5bec7",
+            "name": "Extract video.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/video\/{name}\/extract",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The videos name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destinationPath",
+                    "description": "Path where to save the result file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start",
+                    "description": "Time position from which start extraction.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Determines from which time position the frame for the thumbnail should be taken.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Original video folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "File storage, which have to be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destFileName",
+                    "description": "Result name of the document after the operation. If this parameter is omitted then result of the operation will be saved as the source document.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fontsLocation",
+                    "description": "Folder in filestorage with custom fonts.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cddf74a723cf19e1833a58d0b6660d40",
+            "rawModeData": ""
+        },
+        {
+            "id": "1ee4732457df71c9f48b6871f937bee3",
+            "name": "Read video common info.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/video\/{fileName}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fileName",
+                    "description": "The file name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Original video folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "File storage, which have to be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cddf74a723cf19e1833a58d0b6660d40",
+            "rawModeData": ""
+        },
+        {
+            "id": "83b6a137cf590de5b5a719a49e1ef97b",
+            "name": "Loads new video from web into the file with any supported format of data.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/video\/loadWebVideo",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "storage",
+                    "description": "File storage, which have to be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cddf74a723cf19e1833a58d0b6660d40",
+            "rawModeData": ""
+        }
+    ]
+}
