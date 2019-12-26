@@ -1,0 +1,4594 @@
+{
+    "id": "15f8c7c521acce297b93c6a809ebe867",
+    "name": "Aspose.Imaging Cloud API Reference",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "8adb0717dde894df0000218c842f35e3",
+            "name": "Update parameters of existing BMP image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/bmp",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bitsPerPixel",
+                    "description": "Color depth.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "horizontalResolution",
+                    "description": "New horizontal resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "verticalResolution",
+                    "description": "New vertical resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "73d53a22dbe30cc0df8a7509b33db5c5",
+            "name": "Update parameters of BMP image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/bmp",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bitsPerPixel",
+                    "description": "Color depth.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "horizontalResolution",
+                    "description": "New horizontal resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "verticalResolution",
+                    "description": "New vertical resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "30f969ddf7065caa060953fb92a8be06",
+            "name": "Process existing EMF imaging using given parameters.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/emf",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bkColor",
+                    "description": "Color of the background.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageWidth",
+                    "description": "Width of the page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageHeight",
+                    "description": "Height of the page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "borderX",
+                    "description": "Border width.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "borderY",
+                    "description": "Border height.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "cf9e204fd5a2e91c424721b58565cede",
+            "name": "Process existing EMF imaging using given parameters. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/emf",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bkColor",
+                    "description": "Color of the background.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageWidth",
+                    "description": "Width of the page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageHeight",
+                    "description": "Height of the page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "borderX",
+                    "description": "Border width.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "borderY",
+                    "description": "Border height.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "f5a21c7e788b1bc5377283a4f4f1170d",
+            "name": "Get separate frame from existing TIFF image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/frames\/{frameId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "frameId",
+                    "description": "Number of a frame.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newWidth",
+                    "description": "New width.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newHeight",
+                    "description": "New height.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "X position of start point for cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "y",
+                    "description": "Y position of start point for cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rectWidth",
+                    "description": "Width of cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rectHeight",
+                    "description": "Height of cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rotateFlipMethod",
+                    "description": "RotateFlip method (Rotate180FlipNone, Rotate180FlipX, Rotate180FlipXY, Rotate180FlipY, Rotate270FlipNone, Rotate270FlipX, Rotate270FlipXY, Rotate270FlipY, Rotate90FlipNone, Rotate90FlipX, Rotate90FlipXY, Rotate90FlipY, RotateNoneFlipNone, RotateNoneFlipX, RotateNoneFlipXY, RotateNoneFlipY). Default is RotateNoneFlipNone.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "saveOtherFrames",
+                    "description": "If result will include all other frames or just a specified frame.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "a9302d6c2203fed30faa593a9a7110d7",
+            "name": "Get separate frame from existing TIFF image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/frames\/{frameId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "frameId",
+                    "description": "Number of a frame.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newWidth",
+                    "description": "New width.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newHeight",
+                    "description": "New height.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "X position of start point for cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "y",
+                    "description": "Y position of start point for cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rectWidth",
+                    "description": "Width of cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rectHeight",
+                    "description": "Height of cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rotateFlipMethod",
+                    "description": "RotateFlip method (Rotate180FlipNone, Rotate180FlipX, Rotate180FlipXY, Rotate180FlipY, Rotate270FlipNone, Rotate270FlipX, Rotate270FlipXY, Rotate270FlipY, Rotate90FlipNone, Rotate90FlipX, Rotate90FlipXY, Rotate90FlipY, RotateNoneFlipNone, RotateNoneFlipX, RotateNoneFlipXY, RotateNoneFlipY). Default is RotateNoneFlipNone.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "saveOtherFrames",
+                    "description": "If result will include all other frames or just a specified frame.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "6372d8992852d03cf8ce477a70339f21",
+            "name": "Get separate frame properties of existing TIFF image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/frames\/{frameId}\/properties",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "frameId",
+                    "description": "Number of a frame.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "bc90e136f7b60f5ce712834f428fded2",
+            "name": "Get separate frame properties of existing TIFF image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/frames\/{frameId}\/properties",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "frameId",
+                    "description": "Number of a frame.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "df97a5a1d1456821870d7ef85beb7044",
+            "name": "Update parameters of existing GIF image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/gif",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "backgroundColorIndex",
+                    "description": "Index of the background color.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "colorResolution",
+                    "description": "Color resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hasTrailer",
+                    "description": "Specifies if image has trailer.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interlaced",
+                    "description": "Specifies if image is interlaced.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "isPaletteSorted",
+                    "description": "Specifies if palette is sorted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pixelAspectRatio",
+                    "description": "Pixel aspect ratio.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "a8d66a547c9fc4ea65b1d09c4521b574",
+            "name": "Update parameters of GIF image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/gif",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "backgroundColorIndex",
+                    "description": "Index of the background color.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "colorResolution",
+                    "description": "Color resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hasTrailer",
+                    "description": "Specifies if image has trailer.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interlaced",
+                    "description": "Specifies if image is interlaced.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "isPaletteSorted",
+                    "description": "Specifies if palette is sorted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pixelAspectRatio",
+                    "description": "Pixel aspect ratio.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "6d31ba2645f25276188b3e5ecfa12bef",
+            "name": "Update parameters of existing JPEG2000 image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/jpg2000",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "comment",
+                    "description": "The comment (can be either single or comma-separated).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "codec",
+                    "description": "The codec (j2k or jp2).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "6df86f1563bd4cfcd81cec0d8102fa70",
+            "name": "Update parameters of JPEG2000 image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/jpg2000",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "comment",
+                    "description": "The comment (can be either single or comma-separated).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "codec",
+                    "description": "The codec (j2k or jp2).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "63a2bdff694f387aedac3f2272a8512b",
+            "name": "Update parameters of existing JPEG image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/jpg",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "quality",
+                    "description": "Quality of an image from 0 to 100. Default is 75.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "compressionType",
+                    "description": "Compression type: baseline (default), progressive, lossless or jpegls.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "b21dbb530e07a3c2a75319cf38bee314",
+            "name": "Update parameters of JPEG image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/jpg",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "quality",
+                    "description": "Quality of an image from 0 to 100. Default is 75.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "compressionType",
+                    "description": "Compression type: baseline (default), progressive, lossless or jpegls.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "af0b1319fe332b413e52f5e8762a4f34",
+            "name": "Update parameters of existing PSD image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/psd",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "channelsCount",
+                    "description": "Count of color channels.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "compressionMethod",
+                    "description": "Compression method (for now, raw and RLE are supported).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "74b890f2435591df5305f99e3ebfaca8",
+            "name": "Update parameters of PSD image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/psd",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "channelsCount",
+                    "description": "Count of color channels.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "compressionMethod",
+                    "description": "Compression method (for now, raw and RLE are supported).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "f984c8ce3184293035d1612cf535d890",
+            "name": "Update parameters of existing SVG image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/svg",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "colorType",
+                    "description": "Color type for SVG image. Only RGB is supported for now.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textAsShapes",
+                    "description": "Whether text must be converted as shapes. true if all text is turned into SVG shapes in the convertion; otherwise, false",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "scaleX",
+                    "description": "Scale X.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "scaleY",
+                    "description": "Scale Y.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageWidth",
+                    "description": "Width of the page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageHeight",
+                    "description": "Height of the page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "borderX",
+                    "description": "Border width.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "borderY",
+                    "description": "Border height.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bkColor",
+                    "description": "Color of the background.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "1cc08759b882c09e45edd62cbee89af3",
+            "name": "Update parameters of SVG image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/svg",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "colorType",
+                    "description": "Color type for SVG image. Only RGB is supported for now.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textAsShapes",
+                    "description": "Whether text must be converted as shapes. true if all text is turned into SVG shapes in the convertion; otherwise, false",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "scaleX",
+                    "description": "Scale X.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "scaleY",
+                    "description": "Scale Y.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageWidth",
+                    "description": "Width of the page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageHeight",
+                    "description": "Height of the page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "borderX",
+                    "description": "Border width.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "borderY",
+                    "description": "Border height.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bkColor",
+                    "description": "Color of the background.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "c473523c59fda5798b6f71aeae384c8c",
+            "name": "Update parameters of existing TIFF image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/tiff",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bitDepth",
+                    "description": "Bit depth.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "compression",
+                    "description": "Compression (none is default). Please, refer to https:\/\/apireference.aspose.com\/net\/imaging\/aspose.imaging.fileformats.tiff.enums\/tiffcompressions for all possible values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resolutionUnit",
+                    "description": "New resolution unit (none - the default one, inch or centimeter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "horizontalResolution",
+                    "description": "New horizontal resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "verticalResolution",
+                    "description": "New vertical resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "36230dd6c2245434bdc87ef8d67b1720",
+            "name": "Update parameters of TIFF image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/tiff",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bitDepth",
+                    "description": "Bit depth.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "compression",
+                    "description": "Compression (none is default). Please, refer to https:\/\/apireference.aspose.com\/net\/imaging\/aspose.imaging.fileformats.tiff.enums\/tiffcompressions for all possible values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resolutionUnit",
+                    "description": "New resolution unit (none - the default one, inch or centimeter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "horizontalResolution",
+                    "description": "New horizontal resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "verticalResolution",
+                    "description": "New vertical resolution.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "b313e466c0e7a46cc248f632c7a2ba8c",
+            "name": "Update parameters of existing TIFF image accordingly to fax parameters.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/tiff\/{name}\/toFax",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "6830944b94e53cb365dc950def7f7aca",
+            "name": "Appends existing TIFF image to another existing TIFF image (i.e. merges TIFF images).",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/tiff\/{name}\/appendTiff",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "appendFile",
+                    "description": "Image file name to be appended to original one.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "be2977d68e1e37b2a012b270075b0f37",
+            "name": "Update parameters of existing WEBP image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/webp",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lossLess",
+                    "description": "If WEBP should be in lossless format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "quality",
+                    "description": "Quality of an image from 0 to 100. Default is 75.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "animLoopCount",
+                    "description": "The animation loop count.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "animBackgroundColor",
+                    "description": "Color of the animation background.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "91450870fd9da5619a385d871e89755d",
+            "name": "Update parameters of WEBP image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/webp",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lossLess",
+                    "description": "If WEBP should be in lossless format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "quality",
+                    "description": "Quality of an image from 0 to 100. Default is 75.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "animLoopCount",
+                    "description": "The animation loop count.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "animBackgroundColor",
+                    "description": "Color of the animation background.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "b3afb0f5c33fb4a3582b91112be4fba9",
+            "name": "Process existing WMF image using given parameters.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/wmf",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bkColor",
+                    "description": "Color of the background.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageWidth",
+                    "description": "Width of the page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageHeight",
+                    "description": "Height of the page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "borderX",
+                    "description": "Border width.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "borderY",
+                    "description": "Border height.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "88ea5cb3c3383afa8ed37fcc01e5abe9",
+            "name": "Process existing WMF image using given parameters. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/wmf",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bkColor",
+                    "description": "Color of the background.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageWidth",
+                    "description": "Width of the page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageHeight",
+                    "description": "Height of the page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "borderX",
+                    "description": "Border width.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "borderY",
+                    "description": "Border height.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromScratch",
+                    "description": "Specifies where additional parameters we do not support should be taken from. If this is true \u2013 they will be taken from default values for standard image, if it is false \u2013 they will be saved from current image. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "f55ee6bb72dd8f51509ad17b970f7a28",
+            "name": "Crop an existing image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/crop",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "X position of start point for cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "y",
+                    "description": "Y position of start point for cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Width of cropping rectangle",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Height of cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "7b6f683716795dcf08a025b8d4ae8148",
+            "name": "Crop an image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/crop",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "X position of start point for cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "y",
+                    "description": "Y position of start point for cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Width of cropping rectangle",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Height of cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "febecbabfbc24586fb2721ba5b187314",
+            "name": "Apply filtering effects to an existing image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/filterEffect",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filterType",
+                    "description": "Filter type (BigRectangular, SmallRectangular, Median, GaussWiener, MotionWiener, GaussianBlur, Sharpen, BilateralSmoothing).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "d9abb7e9c4db04613d40b51958bcb953",
+            "name": "Get properties of an image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/properties",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "78dc471eb1dff8d2d25ed586ae43bfcd",
+            "name": "Get properties of an image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/properties",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "1fb1d813dd112eb40e210a2ff9a78f09",
+            "name": "Resize an existing image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/resize",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newWidth",
+                    "description": "New width.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newHeight",
+                    "description": "New height.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "d9a397cd349564821dd9bf6b95678a96",
+            "name": "Resize an image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/resize",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newWidth",
+                    "description": "New width.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newHeight",
+                    "description": "New height.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "583f3dd6304668be29009d2fe732d538",
+            "name": "Rotate and\/or flip an existing image.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/rotateflip",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "method",
+                    "description": "RotateFlip method (Rotate180FlipNone, Rotate180FlipX, Rotate180FlipXY, Rotate180FlipY, Rotate270FlipNone, Rotate270FlipX, Rotate270FlipXY, Rotate270FlipY, Rotate90FlipNone, Rotate90FlipX, Rotate90FlipXY, Rotate90FlipY, RotateNoneFlipNone, RotateNoneFlipX, RotateNoneFlipXY, RotateNoneFlipY).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "68f26d61cb73d0406041e21ef3bb0f3b",
+            "name": "Rotate and\/or flip an image. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/rotateflip",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "method",
+                    "description": "RotateFlip method (Rotate180FlipNone, Rotate180FlipX, Rotate180FlipXY, Rotate180FlipY, Rotate270FlipNone, Rotate270FlipX, Rotate270FlipXY, Rotate270FlipY, Rotate90FlipNone, Rotate90FlipX, Rotate90FlipXY, Rotate90FlipY, RotateNoneFlipNone, RotateNoneFlipX, RotateNoneFlipXY, RotateNoneFlipY).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "1d83d73bbe534f94e42da75e81d20284",
+            "name": "Export existing image to another format.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/saveAs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "1d8529c3650222d35a562b48d96674f3",
+            "name": "Export existing image to another format. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.\n            ",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/saveAs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "8f4db002ea91c75df4fc33188ad37872",
+            "name": "Perform scaling, cropping and flipping of an existing image in a single request.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/{name}\/updateImage",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filename of image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newWidth",
+                    "description": "New width.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newHeight",
+                    "description": "New height.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "X position of start point for cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "y",
+                    "description": "Y position of start point for cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rectWidth",
+                    "description": "Width of cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rectHeight",
+                    "description": "Height of cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rotateFlipMethod",
+                    "description": "RotateFlip method (Rotate180FlipNone, Rotate180FlipX, Rotate180FlipXY, Rotate180FlipY, Rotate270FlipNone, Rotate270FlipX, Rotate270FlipXY, Rotate270FlipY, Rotate90FlipNone, Rotate90FlipX, Rotate90FlipXY, Rotate90FlipY, RotateNoneFlipNone, RotateNoneFlipX, RotateNoneFlipXY, RotateNoneFlipY). Default is RotateNoneFlipNone.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "2503845e4fad5b1f4674513bf1f3bfc1",
+            "name": "Perform scaling, cropping and flipping of an image in a single request. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/updateImage",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Export format (PNG is the default one). Please, refer to the export table from https:\/\/docs.aspose.cloud\/display\/imagingcloud\/Supported+File+Formats#SupportedFileFormats-CommonOperationsFormatSupportMap for possible use-cases.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newWidth",
+                    "description": "New width.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newHeight",
+                    "description": "New height.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "X position of start point for cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "y",
+                    "description": "Y position of start point for cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rectWidth",
+                    "description": "Width of cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rectHeight",
+                    "description": "Height of cropping rectangle.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rotateFlipMethod",
+                    "description": "RotateFlip method (Rotate180FlipNone, Rotate180FlipX, Rotate180FlipXY, Rotate180FlipY, Rotate270FlipNone, Rotate270FlipX, Rotate270FlipXY, Rotate270FlipY, Rotate90FlipNone, Rotate90FlipX, Rotate90FlipXY, Rotate90FlipY, RotateNoneFlipNone, RotateNoneFlipX, RotateNoneFlipXY, RotateNoneFlipY). Default is RotateNoneFlipNone.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outPath",
+                    "description": "Path to updated file (if this is empty, response contains streamed image).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "a76026b8e3132ff55fb03bd6199c8d88",
+            "name": "Create new search context.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/create",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "detector",
+                    "description": "The image features detector.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "matchingAlgorithm",
+                    "description": "The matching algorithm.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "ff446e6830c7af177cae0129442d62ee",
+            "name": "Gets the search context status.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/status",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "7890c44fab0ff62a798cc79809f2bd1b",
+            "name": "Deletes the search context.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "5f91dc7f61ce761f6a96a60df5aa430d",
+            "name": "Extract features from image without adding to search context. Image data may be passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/image2features",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageId",
+                    "description": "The image identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "d7963c2ba40bf6b0772ac704cdb96b78",
+            "name": "Compare two images. Image data may be passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/compare",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageId1",
+                    "description": "The first image Id in storage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageId2",
+                    "description": "The second image Id in storage or null (if image loading in request).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "76dc262e7e1678577e4f7ca47bc0ce1c",
+            "name": "Find similar images. Image data may be passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/findSimilar",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "similarityThreshold",
+                    "description": "The similarity threshold.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxCount",
+                    "description": "The maximum count.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageId",
+                    "description": "The image identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "aadf307005136c9b4c775254a755fa9f",
+            "name": "Find images duplicates.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/findDuplicates",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "similarityThreshold",
+                    "description": "The similarity threshold.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "cbacac075d955bcbade27ed412ebcbcb",
+            "name": "Find images by tags. Tags JSON string is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/findByTags",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tags",
+                    "description": "Tags array for searching",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "similarityThreshold",
+                    "description": "The similarity threshold.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxCount",
+                    "description": "The maximum count.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "144cb3c864e6eb4bb0a23a781e3df470",
+            "name": "Add tag and reference image to search context. Image data is passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/addTag",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tagName",
+                    "description": "The tag.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "2d1d9a7a0e1720d5a742a4ffbcc43143",
+            "name": "Extract images features from web page and add them to search context",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/features\/web",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imagesSource",
+                    "description": "Images source - a web page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "c16586a027d0f86f7590f0f45dd00770",
+            "name": "Extract images features and add them to search context. Image data may be passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/features",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageId",
+                    "description": "The image identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imagesFolder",
+                    "description": "Images source - a folder",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "6a36f55e2d6bfcaa54c1c6ad3e0c9777",
+            "name": "Gets image features from search context.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/features",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageId",
+                    "description": "The image identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "6bb45e284a04dcb798e5124f1fba1441",
+            "name": "Deletes image features from search context.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/features",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageId",
+                    "description": "The image identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "5629f47e956724f954009dffb6531223",
+            "name": "Update images features in search context. Image data may be passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/features",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageId",
+                    "description": "The image identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "86954578b84c2bd67def9226bce98116",
+            "name": "Get image from search context",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/image",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageId",
+                    "description": "The image identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "414652f2a34d7670f66414f09fc81455",
+            "name": "Add image and images features to search context. Image data may be passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/image",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageId",
+                    "description": "The image identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "78c25d0e69b4afd90d24a799f6ce9d49",
+            "name": "Delete image and images features from search context",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/image",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageId",
+                    "description": "The image identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "89fdfd2422e1e3c7fa5314980018bc25",
+            "name": "Update image and images features in search context. Image data may be passed as zero-indexed multipart\/form-data content or as raw body stream.",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/ai\/imageSearch\/{searchContextId}\/image",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "imageData",
+                    "description": "Input image",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "searchContextId",
+                    "description": "The search context identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageId",
+                    "description": "The image identifier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Folder with image to process.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "description": "Your Aspose Cloud Storage name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "7edf8e070646d2fa29d5d0fc18c16c35",
+            "name": "Download file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "56447df4c4fffed2e48c51087f07fa96",
+            "name": "Upload file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "File",
+                    "description": "File to upload",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "5f2baf3dc985f366f69f48cbefa6fb3c",
+            "name": "Delete file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/file\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "7519db61eb80dc000dc522fe1275b7a5",
+            "name": "Copy file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/file\/copy\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "e993d0ebe9fa0868abd822be0a65be79",
+            "name": "Move file",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/file\/move\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "b405da76e114d10900aa404325c0608f",
+            "name": "Get all files and folders within a folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "6386248da16426e747e5e08c27212632",
+            "name": "Create the folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "ec05fadb13f20d71c3aef2362faf3989",
+            "name": "Delete folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/folder\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "recursive",
+                    "description": "Enable to delete folders, subfolders and files",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "fc5e1ca59c8014a31ab0c29e25832a7e",
+            "name": "Copy folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/folder\/copy\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "f0e3ccd9e1dfb542b3cd9987e5a58ab4",
+            "name": "Move folder",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/folder\/move\/{srcPath}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "srcPath",
+                    "description": "Source file path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destPath",
+                    "description": "Destination file path",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srcStorageName",
+                    "description": "Source storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "destStorageName",
+                    "description": "Destination storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "7dc33e9d76aa7e587ca13b2952b22596",
+            "name": "Check if storage exists",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/{storageName}\/exist",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "e8f4c6162afd06ebb0b4c241c4efe15b",
+            "name": "Check if file or folder exists",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/exist\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "File version ID to download",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "05b0cf69f58bed5af05d23db42f685e5",
+            "name": "Get disc usage",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/disc",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        },
+        {
+            "id": "bf93c92acb479053eba014865b95a8e8",
+            "name": "Get file versions",
+            "url": "http:\/\/api.aspose.cloud\/v3.0\/imaging\/storage\/version\/{path}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "path",
+                    "description": "File path e.g. \/folder\/file.ext",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "storageName",
+                    "description": "Storage name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "15f8c7c521acce297b93c6a809ebe867",
+            "rawModeData": ""
+        }
+    ]
+}
