@@ -1,0 +1,231 @@
+{
+    "id": "e9bb67b791193519da69e3fbe5504da7",
+    "name": "Aspose.Diagram for Cloud API Reference",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "e04f683dd27608517adf0e70a34a5817",
+            "name": "Read pages info.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/diagram\/{name}\/pages",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e9bb67b791193519da69e3fbe5504da7",
+            "rawModeData": ""
+        },
+        {
+            "id": "92dfaf267af24510b52b77903505f11d",
+            "name": "get document info.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/diagram\/{name}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e9bb67b791193519da69e3fbe5504da7",
+            "rawModeData": ""
+        },
+        {
+            "id": "8cb4474bdb4103c2ec5301aa0627223e",
+            "name": "Create new file.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/diagram\/{name}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "IsOverwrite",
+                    "description": "If true overwrite the same name file.The default value is false ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e9bb67b791193519da69e3fbe5504da7",
+            "rawModeData": ""
+        },
+        {
+            "id": "f62ed997ff0e455a689efdd8d60ead5e",
+            "name": "Upload file.",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/diagram\/{name}\/upload",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "IsOverwrite",
+                    "description": "If true overwrite the same name file.The default value is false ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e9bb67b791193519da69e3fbe5504da7",
+            "rawModeData": ""
+        },
+        {
+            "id": "283c337eca2009509833f23be9b9f1d6",
+            "name": "Save File as another format.like 'png' 'pdf' and more",
+            "url": "http:\/\/api.aspose.cloud\/v1.1\/diagram\/{name}\/SaveAs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Document name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newfilename",
+                    "description": "The new document",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder",
+                    "description": "Document folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "IsOverwrite",
+                    "description": "If true overwrite the same name file.The default value is false ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e9bb67b791193519da69e3fbe5504da7",
+            "rawModeData": ""
+        }
+    ]
+}
